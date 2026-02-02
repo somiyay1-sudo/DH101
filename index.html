@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH101 - Critical Making</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid #eee;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        nav {
+            margin-top: 2rem;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.25rem;
+            transition: border-color 0.2s;
+        }
+
+        nav a:hover {
+            border-bottom-color: #333;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border-top: 1px solid #eee;
+            padding-top: 1.5rem;
+        }
+
+        .items-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .item {
+            padding: 1rem;
+            background: white;
+            border-left: 3px solid #f0f0f0;
+            text-decoration: none;
+            color: #333;
+            transition: border-color 0.2s;
+        }
+
+        .item:hover {
+            border-left-color: #333;
+        }
+
+        .item-title {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-meta {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        #selfie {
+            background: white;
+            padding: 2rem;
+            border: 1px solid #eee;
+            text-align: center;
+        }
+
+        #selfie img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        #selfie p {
+            color: #666;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 640px) {
+            nav {
+                gap: 1rem;
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DH101</h1>
+            <p class="tagline">Critical Making this Semester</p>
+            <nav>
+                <a href="#makes">Makes</a>
+                <a href="#reflections">Reflections</a>
+                <a href="#pages">Pages</a>
+                <a href="#selfie">Selfie</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Selfie Section -->
+        <section id="selfie">
+            <h2>Selfie</h2>
+            <div style="text-align: center; padding: 2rem 0;">
+                <p style="color: #666;">Add your photo and bio here</p>
+                <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">Replace this with your image: &lt;img src="your-photo.jpg" alt="Your name"&gt;</p>
+            </div>
+        </section>
+
+        <!-- Makes Section -->
+        <section id="makes">
+            <h2>Makes</h2>
+            <div class="items-list">
+                <a href="makes/week01.md" class="item">
+                    <div class="item-title">Week 1</div>
+                    <div class="item-meta">Initial project exploration</div>
+                </a>
+                <a href="makes/week03.md" class="item">
+                    <div class="item-title">Week 3</div>
+                </a>
+                <a href="makes/week04.md" class="item">
+                    <div class="item-title">Week 4</div>
+                </a>
+                <a href="makes/week05.md" class="item">
+                    <div class="item-title">Week 5</div>
+                </a>
+                <a href="makes/week06.md" class="item">
+                    <div class="item-title">Week 6</div>
+                </a>
+                <a href="makes/week07.md" class="item">
+                    <div class="item-title">Week 7</div>
+                </a>
+                <a href="makes/week08.md" class="item">
+                    <div class="item-title">Week 8</div>
+                </a>
+                <a href="makes/week09.md" class="item">
+                    <div class="item-title">Week 9</div>
+                </a>
+                <a href="makes/week10.md" class="item">
+                    <div class="item-title">Week 10</div>
+                </a>
+                <a href="makes/week11.md" class="item">
+                    <div class="item-title">Week 11</div>
+                </a>
+                <a href="makes/week12.md" class="item">
+                    <div class="item-title">Week 12</div>
+                </a>
+                <a href="makes/week13.md" class="item">
+                    <div class="item-title">Week 13</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Reflections Section -->
+        <section id="reflections">
+            <h2>Reflections</h2>
+            <div class="items-list">
+                <a href="reflections/week01.md" class="item">
+                    <div class="item-title">Week 1</div>
+                    <div class="item-meta">Initial thoughts</div>
+                </a>
+                <a href="reflections/week02.md" class="item">
+                    <div class="item-title">Week 2</div>
+                </a>
+                <a href="reflections/week03.md" class="item">
+                    <div class="item-title">Week 3</div>
+                </a>
+                <a href="reflections/week04.md" class="item">
+                    <div class="item-title">Week 4</div>
+                </a>
+                <a href="reflections/week05.md" class="item">
+                    <div class="item-title">Week 5</div>
+                </a>
+                <a href="reflections/week06.md" class="item">
+                    <div class="item-title">Week 6</div>
+                </a>
+                <a href="reflections/week07.md" class="item">
+                    <div class="item-title">Week 7</div>
+                </a>
+                <a href="reflections/week08.md" class="item">
+                    <div class="item-title">Week 8</div>
+                </a>
+                <a href="reflections/week09.md" class="item">
+                    <div class="item-title">Week 9</div>
+                </a>
+                <a href="reflections/week10.md" class="item">
+                    <div class="item-title">Week 10</div>
+                </a>
+                <a href="reflections/week11.md" class="item">
+                    <div class="item-title">Week 11</div>
+                </a>
+                <a href="reflections/week12.md" class="item">
+                    <div class="item-title">Week 12</div>
+                </a>
+                <a href="reflections/week13.md" class="item">
+                    <div class="item-title">Week 13</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Pages Section -->
+        <section id="pages">
+            <h2>Pages</h2>
+            <div class="items-list">
+                <a href="pages/about.md" class="item">
+                    <div class="item-title">About</div>
+                </a>
+                <a href="pages/how-i-use-ai.md" class="item">
+                    <div class="item-title">How I Use AI</div>
+                </a>
+                <a href="pages/markdown-guide.md" class="item">
+                    <div class="item-title">Markdown Guide</div>
+                </a>
+                <a href="pages/accessibility.md" class="item">
+                    <div class="item-title">Accessibility</div>
+                </a>
+                <a href="pages/sustainability.md" class="item">
+                    <div class="item-title">Sustainability</div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DH101 Critical Making</p>
+    </footer>
+</body>
+</html>
