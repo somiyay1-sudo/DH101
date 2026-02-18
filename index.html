@@ -112,16 +112,50 @@
             background: white;
             padding: 2rem;
             border: 1px solid #eee;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
             text-align: center;
+            margin-bottom: 2rem;
         }
 
-        #selfie img {
-            max-width: 200px;
+        .selfie-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .selfie-card {
+            background: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+            padding: 1.5rem 1rem 1rem 1rem;
+            max-width: 260px;
+            transition: transform 0.18s, box-shadow 0.18s;
+            text-align: center;
+        }
+        .selfie-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.13);
+        }
+        .selfie-card img {
+            max-width: 100%;
             height: auto;
             border-radius: 8px;
             margin-bottom: 1rem;
+            box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
         }
-
+        .selfie-card-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.3rem;
+            font-size: 1.05rem;
+        }
+        .selfie-card-desc {
+            font-size: 0.93rem;
+            color: #666;
+        }
         #selfie p {
             color: #666;
             max-width: 400px;
@@ -168,35 +202,7 @@
     </header>
 
     <main class="container">
-        <!-- Selfie Section -->
-        <section id="selfie">
-            <h2>Selfie</h2>
-            <div style="padding: 2rem 0;">
-                <p style="color: #666; margin-bottom: 2rem;">AI-Generated Selfie Evolution: A journey exploring bias in AI image generation using Canva to create selfies of a Japanese physics student in the US.</p>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-                    <div style="text-align: center;">
-                        <img src="picture/make2_1.jpeg" alt="AI selfie - Initial prompt" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
-                        <p style="font-weight: 600; color: #333;">Initial Prompt</p>
-                        <p style="font-size: 0.9rem; color: #666;">"Create selfie of the Japanese students who majors physics in US liberal arts college"</p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <img src="picture/make2_2.jpeg" alt="AI selfie - First edit" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
-                        <p style="font-weight: 600; color: #333;">First Edit</p>
-                        <p style="font-size: 0.9rem; color: #666;">Male student with black hair, glasses, and black clothes</p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <img src="picture/make2_3.jpeg" alt="AI selfie - Second edit" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
-                        <p style="font-weight: 600; color: #333;">Second Edit</p>
-                        <p style="font-size: 0.9rem; color: #666;">Younger appearance with refined glasses</p>
-                    </div>
-                </div>
-                
-                <p style="color: #666; font-size: 0.95rem; line-height: 1.8;">This project explores how AI systems reflect biases in their training data. When asked to generate a "Japanese exchange student," the AI initially created a female student, reflecting demographic patterns of international students. Through iterative prompts, I refined the image to better match my actual appearance, revealing both the capabilities and limitations of AI image generation in capturing personal identity.</p>
-            </div>
-        </section>
+        <!-- Selfie Section moved to Make 2 (week02.md) -->
 
         <!-- Makes Section -->
         <section id="makes">
