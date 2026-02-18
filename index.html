@@ -4,193 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH101 - Critical Making</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fafafa;
-        }
-
-        header {
-            background: white;
-            border-bottom: 1px solid #eee;
-            padding: 2rem 0;
-            position: sticky;
-            top: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .tagline {
-            font-size: 0.95rem;
-            color: #666;
-        }
-
-        nav {
-            margin-top: 2rem;
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-size: 0.9rem;
-            font-weight: 500;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 0.25rem;
-            transition: border-color 0.2s;
-        }
-
-        nav a:hover {
-            border-bottom-color: #333;
-        }
-
-        main {
-            padding: 3rem 0;
-        }
-
-        section {
-            margin-bottom: 4rem;
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            border-top: 1px solid #eee;
-            padding-top: 1.5rem;
-        }
-
-        .items-list {
-            display: grid;
-            gap: 1rem;
-        }
-
-        .item {
-            padding: 1rem;
-            background: white;
-            border-left: 3px solid #f0f0f0;
-            text-decoration: none;
-            color: #333;
-            transition: border-color 0.2s;
-        }
-
-        .item:hover {
-            border-left-color: #333;
-        }
-
-        .item-title {
-            font-weight: 500;
-            margin-bottom: 0.25rem;
-        }
-
-        .item-meta {
-            font-size: 0.85rem;
-            color: #999;
-        }
-
-        #selfie {
-            background: white;
-            padding: 2rem;
-            border: 1px solid #eee;
-            border-radius: 16px;
-            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .selfie-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-            margin-bottom: 2rem;
-        }
-
-        .selfie-card {
-            background: #f9f9f9;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
-            padding: 1.5rem 1rem 1rem 1rem;
-            max-width: 260px;
-            transition: transform 0.18s, box-shadow 0.18s;
-            text-align: center;
-        }
-        .selfie-card:hover {
-            transform: translateY(-6px) scale(1.03);
-            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.13);
-        }
-        .selfie-card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
-        }
-        .selfie-card-title {
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 0.3rem;
-            font-size: 1.05rem;
-        }
-        .selfie-card-desc {
-            font-size: 0.93rem;
-            color: #666;
-        }
-        #selfie p {
-            color: #666;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        footer {
-            margin-top: 4rem;
-            padding: 2rem 0;
-            border-top: 1px solid #eee;
-            text-align: center;
-            color: #999;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 640px) {
-            nav {
-                gap: 1rem;
-                flex-direction: column;
-            }
-
-            h1 {
-                font-size: 1.3rem;
-            }
-
-            h2 {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles/site.css">
 </head>
-<body>
-    <header>
+<body class="site-home">
+    <header class="site-header">
         <div class="container">
-            <h1>DH101</h1>
+            <h1 class="site-title">DH101</h1>
             <p class="tagline">Critical Making this Semester</p>
             <nav>
                 <a href="#makes">Makes</a>
@@ -201,7 +23,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main class="container site-main">
         <!-- Selfie Section moved to Make 2 (week02.md) -->
 
         <!-- Makes Section -->
@@ -211,6 +33,10 @@
                 <a href="makes/week01.md" class="item">
                     <div class="item-title">Week 1</div>
                     <div class="item-meta">Initial project exploration</div>
+                </a>
+                <a href="makes/week02.md" class="item">
+                    <div class="item-title">Week 2</div>
+                    <div class="item-meta">Make 2: AI-generated selfie</div>
                 </a>
                 <a href="makes/week03.md" class="item">
                     <div class="item-title">Week 3</div>
@@ -299,10 +125,6 @@
         <section id="pages">
             <h2>Pages</h2>
             <div class="items-list">
-                <a href="pages/make2.md" class="item">
-                    <div class="item-title">Make2</div>
-                    <div class="item-meta">AI-Generated Selfie Journey</div>
-                </a>
                 <a href="pages/about.md" class="item">
                     <div class="item-title">About</div>
                 </a>

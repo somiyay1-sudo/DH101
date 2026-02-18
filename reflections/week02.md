@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 > **Markdown help:** See [markdown-guide.md](../pages/markdown-guide.md) for formatting tips and a reflection template.
 
 # Week 2 Reflection
@@ -13,3 +17,8 @@ Yes, people can make decisions that AI cannot. However, nowadays, people choose 
 ### The Patterned Decision
 
 So, people can help you make a decision, but your decision is already patterned by AI. We're not truly making autonomous choices—we're selecting from pre-determined paths that reflect collective patterns rather than individual preferences.
+
+
+
+
+

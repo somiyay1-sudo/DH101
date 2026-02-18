@@ -1,4 +1,8 @@
-# Week 6 – Text & Distant Reading
+---
+layout: default
+---
+
+# Week 6  EText & Distant Reading
 
 ## The Artifact
 Describe or embed your artifact here.
@@ -10,10 +14,15 @@ What tools did you use?
 What decisions did you make?
 
 ## Reflection
-Respond to this week’s reflection prompt in 200–300 words.
+Respond to this week’s reflection prompt in 200 E00 words.
 
 ## Attribution & AI Use
 - Tools used:
 - AI prompts (summary):
 - What AI generated:
 - What you changed or decided:
+
+
+
+
+

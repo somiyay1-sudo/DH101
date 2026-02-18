@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Markdown Guide
 
 Quick reference for writing course pages and reflections.
@@ -130,3 +134,8 @@ Tips for reflections
 - Keep sections in order; avoid skipping heading levels.
 - Prefer short paragraphs and bullet points over long blocks of text.
 - If you include images, explain why they matter in the surrounding text.
+
+
+
+
+

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Week 1 Reflection
 
 ## What counts as "making" in the age of AI?
@@ -11,4 +15,8 @@ However, relying too much on AI could lead to a lack of human interaction. Peopl
 ### The Blurred Line
 
 The bigger concern is this: **We may no longer be able to define something as "made by humans."** If people stop communicating with each other and entrust everything to AI, the distinction between "human-made" and "AI-made" will become blurred, and the concept of "making" will ultimately belong to AI.
+
+
+
+
 
