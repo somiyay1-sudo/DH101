@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang=\"en\">
+  <head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Week 2 Reflection</title>
+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap\">
+    <link rel=\"stylesheet\" href=\"../styles/site.css\">
+  </head>
+  <body class=\"site-page\">
+    <header class=\"site-header\">
+      <div class=\"container\">
+        <h1 class=\"site-title\"><a href=\"../index.html\">DH101</a></h1>
+        <p class=\"tagline\">Critical Making this Semester</p>
+      </div>
+    </header>
+    <main class=\"container site-main\">
+      <textarea id=\"md-source\" style=\"display:none\">> **Markdown help:** See [markdown-guide.md](../pages/markdown-guide.md) for formatting tips and a reflection template.
+
+# Week 2 Reflection
+
+## Can AI help us define what it means to be human, or does it reduce us to patterns?
+
+**AI reduces us to patterns.** People are losing their individuality and becoming "standardized" by AI. AI utilizes enormous data to create output; however, the data is usually biased depending on the amount of data on language or nations.
+
+### The Illusion of Choice
+
+Yes, people can make decisions that AI cannot. However, nowadays, people choose from options that AI provides, and these options are generalized because AI is used by many people, not just you.
+
+### The Patterned Decision
+
+So, people can help you make a decision, but your decision is already patterned by AI. We're not truly making autonomous choices窶背e're selecting from pre-determined paths that reflect collective patterns rather than individual preferences.      </textarea>
+      <div id=\"content\"></div>
+    </main>
+    <footer>
+      <p>&copy; 2026 DH101 Critical Making</p>
+    </footer>
+    <script src=\"https://cdn.jsdelivr.net/npm/marked/marked.min.js\"></script>
+    <script>
+      const mdSource = document.getElementById("md-source").value;
+      document.getElementById("content").innerHTML = marked.parse(mdSource);
+    </script>
+  </body>
+</html>

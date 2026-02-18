@@ -2,25 +2,34 @@
 layout: default
 ---
 
-# Week 1  EReverse Engineering
+# Yugen Somiya_Make 1: Reverse-engineer a DH/AI project
 
-## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+## Project Chosen
+Photogrammar
+https://photogrammar.org/maps
 
-## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+## What Is Being Made?
+**What is the output of this project?**
+It is a collection of old photography on each place of the United States. The primary output is a web-based discovery platform featuring interactive choropleth maps.
 
-## Reflection
-Respond to this week’s reflection prompt in 200 E00 words.
+**What experience does it create for the user?**
+You can travel through the U.S. geographically between Jan 1935 - Jun 1944. In addition, you are able to see what life looked like in their specific county during the 1930s.
 
-## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
-- What AI generated:
-- What you changed or decided:
+## What Is the Project Made From? (Data)
+Visual data and text data, such as place and timestamps, photographer names, that came from an online collection of the Library of Congress.
+
+## Tools, Algorithms, or Systems
+Leaflet and CartoDB for the mapping and GIS (Geographic Information Systems) infrastructure. The mapping of thousands of data points. The researcher applied computer vision and machine learning (including AI) techniques to these "messy," unstructured, and unlabeled historical images. As the large number of photos displayed suggests, the photo selection and labeling process appears to be automated.
+
+## Human Labor & Decisions
+For this project, pictures were taken by FSA and OWI agencies of the U.S. federal government. Lauren Tilton, Taylor Arnold, and Rob Nelson led the data curation, analysis, and development of the web-based application. The Yale and University of Richmond team researchers cleaned the messy metadata to make it machine-readable for the map. The staff and researchers collected photographs from the data and decided how to "bin" dates and locations to make the map usable. So, they made a judgment call on whether or not to use them for this project.
+
+## Design as Argument
+I think the map argues that the Great Depression was a national, totalizing event, not local one. By shading the entire U.S. map, the project visualizes the sheer scale of the government's attempt to document American history.
+The project has successfully visualized American history by using AI to sort and label a large volume of digital archives. However, the coverage is not comprehensive, as there are fewer photographs from certain regions, particularly rural areas.
+
+## Reflection (200-300 words)
+In this Photogrammar project, "making" means exploring the connection between photographs and text (e.g., place, time, and message). The researcher expresses the history of the Great Depression and World War II through pictures of locations. Photogrammar aggregates, maps, and tags images, presenting them in ways that extend beyond their original form. The project creates new relationships between images, metadata (e.g., location, date, classification, and photographer), and visualizations (e.g., maps, treemaps, and dashboards) that users can explore. The nature of that "making" changes in scale and character when AI is used. In this context, machines do not take photographs; rather, they mediate how large collections are viewed and interpreted. The machine's participation can automatically extract semantic metadata, classify features, and generate structured annotations that make the archive searchable and explorable on a scale far beyond what one person could achieve manually. In this project, the machine was able to collect and label enormous pictures from the United States. This kind of machine participation shifts photography from a human-centered act of creation and interpretation to a hybrid process in which digital tools produce new knowledge about images by quantifying patterns across thousands of photographs.
 
 
 

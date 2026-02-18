@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang=\"en\">
+  <head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Week 1 Reflection</title>
+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap\">
+    <link rel=\"stylesheet\" href=\"../styles/site.css\">
+  </head>
+  <body class=\"site-page\">
+    <header class=\"site-header\">
+      <div class=\"container\">
+        <h1 class=\"site-title\"><a href=\"../index.html\">DH101</a></h1>
+        <p class=\"tagline\">Critical Making this Semester</p>
+      </div>
+    </header>
+    <main class=\"container site-main\">
+      <textarea id=\"md-source\" style=\"display:none\"># Week 1 Reflection
+
+## What counts as "making" in the age of AI?
+
+In the age of AI, **"making" means connecting data and people.** Relying on machines allows people to access large-scale data and digital archives. This exposure to new information and environments can stimulate creativity.
+
+### The Risk of Over-Reliance
+
+However, relying too much on AI could lead to a lack of human interaction. People might find themselves only communicating with AI rather than with each other, which would result in a lack of human connection.
+
+### The Blurred Line
+
+The bigger concern is this: **We may no longer be able to define something as "made by humans."** If people stop communicating with each other and entrust everything to AI, the distinction between "human-made" and "AI-made" will become blurred, and the concept of "making" will ultimately belong to AI.      </textarea>
+      <div id=\"content\"></div>
+    </main>
+    <footer>
+      <p>&copy; 2026 DH101 Critical Making</p>
+    </footer>
+    <script src=\"https://cdn.jsdelivr.net/npm/marked/marked.min.js\"></script>
+    <script>
+      const mdSource = document.getElementById("md-source").value;
+      document.getElementById("content").innerHTML = marked.parse(mdSource);
+    </script>
+  </body>
+</html>
