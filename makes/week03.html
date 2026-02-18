@@ -1,47 +1,42 @@
 ﻿<!DOCTYPE html>
-<html lang=\"en\">
+<html lang="en">
   <head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Week 3 窶・Selfie & Identity</title>
-    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
-    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
-    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap\">
-    <link rel=\"stylesheet\" href=\"../styles/site.css\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make 3. Let's Make a Comic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="../styles/site.css">
   </head>
-  <body class=\"site-page\">
-    <header class=\"site-header\">
-      <div class=\"container\">
-        <h1 class=\"site-title\"><a href=\"../index.html\">DH101</a></h1>
-        <p class=\"tagline\">Critical Making this Semester</p>
+  <body class="site-page">
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
+        <p class="tagline">Critical Making this Semester</p>
       </div>
     </header>
-    <main class=\"container site-main\">
-      <textarea id=\"md-source\" style=\"display:none\"># Week 3 窶・Selfie & Identity
+    <main class="container site-main">
+      <textarea id="md-source" style="display:none">
+# Make 3. Let's Make a Comic
 
-## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+![AI comic panels](week03/assets/名称未設定のデザイン.png)
 
-## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
-
-## Reflection
-Respond to this week窶冱 reflection prompt in 200窶・00 words.
+## Commentary
+In this story, I tried to depict a cat and its owner reuniting and enjoying a trip to America together in order to test the ability of AI to reproduce emotions in an AI-generated drawing. While the AI-generated comic reflects my story ideas to some extent, it falls short of fully expressing the intended emotions. It only superficially depicts human emotions, and the cat's expressions seem ordinary. The comic only superficially depicts human emotions, and the cat's expressions appear generic. For example, three of the six panels depict the cat with the same expression. The joy and satisfaction experienced by a cat and its owner upon reuniting after a long separation are unique to this relationship. Yet the AI's depiction of these emotions is extremely standardized in my comic. While humans can visualize and verbalize these emotions through experience with cats, the AI appears to infer emotions only from data. This results in a depiction that differs from the emotions the artist intended to express. Ultimately, this comic reinforces stereotypes about how cats interact with humans. In other words, the AI comic does not capture my cat's characteristics or the relationship and emotions I intended to portray.
+Through this project, I learned that while AI can reproduce what humans imagine, it cannot effectively express an artist's intentions or emotions. Although an artist can draw the "correct" comic in response to a prompt, the drawing style is generalized because it is not based on real experience.
 
 ## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
-- What AI generated:
-- What you changed or decided:      </textarea>
-      <div id=\"content\"></div>
+- AI Tool: ChatGPT (images)
+- Human Contribution: Coming up with original ideas and creating stories, editing, captions, reflection
+- AI Role: generating images for comic I suggested
+      </textarea>
+      <div id="content"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
     </footer>
-    <script src=\"https://cdn.jsdelivr.net/npm/marked/marked.min.js\"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
       document.getElementById("content").innerHTML = marked.parse(mdSource);

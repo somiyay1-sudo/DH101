@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make 2: AI-Generated Selfie Journey
+# Make 2: AI Selfie
 
 ## AI Name: Canva
 

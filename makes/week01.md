@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Yugen Somiya_Make 1: Reverse-engineer a DH/AI project
+# Make 1: Reverse-engineer a DH/AI project
 
 ## Project Chosen
 Photogrammar
