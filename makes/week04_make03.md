@@ -5,8 +5,7 @@ layout: default
 # Week 4  EComic & Storytelling
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+![Week 4 artifact GIF](assets/ezgif.com-crop.gif)
 
 ## Process Notes
 How did you make this?

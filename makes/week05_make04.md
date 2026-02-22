@@ -2,11 +2,10 @@
 layout: default
 ---
 
-# Week 5  EGIF & Remix Culture
+# Week 5 gif & Remix Culture
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+![Week 5 artifact GIF](week05_make04/assets/ezgif.com-animated-gif-maker.gif)
 
 ## Process Notes
 How did you make this?

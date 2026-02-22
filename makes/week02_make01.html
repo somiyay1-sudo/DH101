@@ -1,7 +1,23 @@
----
-layout: default
----
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make 2: AI Selfie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="../styles/site.css">
+  </head>
+  <body class="site-page">
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
+        <p class="tagline">Critical Making this Semester</p>
+      </div>
+    </header>
+    <main class="container site-main">
+      <textarea id="md-source" style="display:none">
 # Make 2: AI Selfie
 
 ## AI Name: Canva
@@ -9,7 +25,7 @@ layout: default
 ### Initial Prompt
 "Create selfie of the Japanese students who majors physics in US liberal arts college"
 
-![AI selfie - initial prompt](week02/assets/make2_1.jpg)
+![AI selfie - initial prompt](week02_make01/assets/make2_1.jpg)
 
 ---
 
@@ -19,7 +35,7 @@ Could you make the Japanese male student's glasses more horizontally elongated, 
 
 The first image looks like a Japanese student, but she is a female. So, I ask to change to a male student. I also ask to change my hair color, my hair color is black.
 
-![AI selfie - first edit](week02/assets/make2_2.jpg)
+![AI selfie - first edit](week02_make01/assets/make2_2.jpg)
 
 ---
 
@@ -29,7 +45,7 @@ He should look younger and wear glasses.
 
 The AI-generated selfie was of an older, middle-aged man who wasn't wearing glasses, so I instructed him to create a picture of a younger student wearing glasses instead.
 
-![AI selfie - second edit](week02/assets/make2_3.jpg)
+![AI selfie - second edit](week02_make01/assets/make2_3.jpg)
 
 ---
 
@@ -40,8 +56,17 @@ The initial prompt was abstract: "A student attending an American liberal arts c
 I then wrote an editing prompt for the AI to transform the female student's selfie into that of a male student with black hair wearing black clothes and glasses. The result was an image of an Asian-looking student wearing black clothes. Although he looked slightly older than the average student, the image more closely resembled my appearance. In particular, the hairstyle, eyes, and clothing captured my features.
 
 To improve the accuracy further, I added a prompt to include glasses, resulting in the third image. The overall atmosphere, expression, and understated appearance of the image with glasses closely resembled my "real selfie." However, despite instructing the AI to make me look younger in the prompt, the resulting selfie looked like a middle-aged man. In particular, the amount of facial hair is different from my actual appearance. Also, the eyes are depicted as double-lidded, but I don't have double eyelids, so this part is also inaccurate.
-
-
-
-
+      </textarea>
+      <div id="content"></div>
+    </main>
+    <footer>
+      <p>&copy; 2026 DH101 Critical Making</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      const mdSource = document.getElementById("md-source").value;
+      document.getElementById("content").innerHTML = marked.parse(mdSource);
+    </script>
+  </body>
+</html>
 
