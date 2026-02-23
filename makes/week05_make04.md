@@ -5,7 +5,7 @@ layout: default
 # Week 5 gif & Remix Culture
 
 ## The Artifact
-![Week 5 artifact GIF](week05_make04/assets/ezgif.com-animated-gif-maker.gif)
+![Week 5 artifact GIF](week05_make04/assets/gif_for_class.gif)
 
 ## Process Notes
 How did you make this?
