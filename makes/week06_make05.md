@@ -2,25 +2,94 @@
 layout: default
 ---
 
-# Week 6  EText & Distant Reading
+# Week 6 EText & Distant Reading
 
-## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+## Make 5. Compare Voyant vs GPT text analysis
+Student Name: Yugen Somiya.
 
-## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+## Text Analyzed
+- In times of war, culture holds even greater significance than in times of peace - Volodymyr Zelenskyy at the Taras Shevchenko National Prize ceremony
+- Speech by President Volodymyr Zelenskyy at the Verkhovna Rada session on the occasion of the Day of Ukrainian Statehood
+- Address to the Parliament of Iceland
 
-## Reflection
-Respond to this week’s reflection prompt in 200 E00 words.
+## Voyant Analysis (Summary)
+As the president of Ukraine is currently at war with Russia, words like "Ukraine" and "Russia" appear frequently in Voyant's analysis. However, other words related to national identity, such as "culture," "nation," and "people," also appear frequently. These frequently occurring words indicate that Zelensky's speeches are not solely focused on condemning Russia, but are based on questions such as "what is nation, people, and culture?" Furthermore, the analysis of Voyant shows that keywords such as "people" and "state" are scattered and repeated throughout the message to make it easier for listeners to remember.
+Using Voyant made certain structural features much clearer to me, particularly the repetition of intimate forms of address toward those who respect Ukraine and its identity. It revealed patterns in word frequency and emphasis that I might have missed with a casual reading. However, the tool was limited to showing surface-level trends. It did not help me interpret the emotional or thematic significance behind the repetitions, which required my own analysis.
 
-## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
-- What AI generated:
-- What you changed or decided:
+## Result of Voyant
+![Voyant result 1](week06_make05/assets/gD4pnQAAAAZJREFUAwAvM5TM7FOSgAAAABJRU5ErkJggg.png)
+![Voyant result 2](week06_make05/assets/R0JTZAAAABklEQVQDAITF5oZPwmzWAAAAAElFTkSuQmCC.png)
+
+## ChatGPT analysis
+The ChatGPT analysis revealed that Zelensky's narratives are grounded in identity, values, and moral urgency rather than in purely political arguments. Additionally, the AI emphasizes that Zelensky's rhetoric often combines emotional resonance with ethical authority. Zelensky draws on shared cultural values - freedom, democracy, and historical identity - that include emotional aspects with which listeners can sympathize.
+Rather than focusing on each individual word, AI can summarize the narrative and emotions conveyed throughout the speech, allowing it to uncover hidden messages that would not have been apparent at the word level.
+
+## Reflection (200-300 words)
+What do we gain and what do we lose when machines "read" literature for us?
+How do Voyant and GPT imagine "meaning" differently?
+
+When machines read literature, they will develop an "excellent memory" and an "objective perspective." By memorizing literature, machines will be able to detect subtle differences in expression and word frequency more accurately. This is due to Voyant's ability to extract and analyze all words, including their frequency and context. Furthermore, machines will understand the full content of a work, allowing them to identify the author's intention more objectively.
+While machines will gain an "excellent memory" and an "objective perspective" when they read literature, they will lose "subjective and diverse interpretations." Humans, on the other hand, can use their imagination to consider subsequent developments and interpretations of a story. Sometimes, this leads to a reader's interpretation differing from the author's. However, we humans do not consider this subjective interpretation wrong; it is simply one of many diverse impressions. However, machines may judge these interpretations as "incorrect" if they differ from the author's intentions. This is because analyzing word context, background, frequency, etc., can provide evidence that the interpretation is incorrect.
+For Voyant, meaning is the data of a word and its context. Voyant's meaning is the "meaning" of the word and the "intention" with which it is written. ChatGPT's meaning is an objective interpretation derived from data; there is no room for human emotion.
+
+## Attribution
+### Text used (title, author, source)
+- In times of war, culture holds even greater significance than in times of peace - Volodymyr Zelenskyy at the Taras Shevchenko National Prize ceremony
+- Speech by President Volodymyr Zelenskyy at the Verkhovna Rada session on the occasion of the Day of Ukrainian Statehood
+- Address to the Parliament of Iceland
+
+### Tools used
+Voyant, ChatGPT
+
+### GPT prompt(s)
+Please provide an overall literary or rhetorical analysis from these three Zelensky speeches.
+
+### Sources
+- https://www.president.gov.ua/en/news/vistup-prezidenta-volodimira-zelenskogo-na-zasidanni-verhovn-76717
+- https://www.president.gov.ua/en/news/u-chas-vijni-kultura-maye-navit-bilshe-znachennya-nizh-u-cha-89613
+- https://www.americanrhetoric.com/speeches/volodymyrzelenskyparliamentoficeland.htm
+
+### What each tool could not do
+Voyant analyzes text by identifying keywords and examining their frequency. This method enables Voyant to identify the author's or speaker's intentions and emphasized points that a reader would not otherwise notice. However, Voyant cannot analyze the text as a whole. Consequently, it is not suitable for analyzing the text's emotional expression, consistent attitude, narrative development, or storytelling. AI can solve these problems and determine the message conveyed by the story. AI processes can narrow the analysis down to key points from a wide range of texts, potentially allowing it to accurately interpret the author's or speaker's emotions. However, unlike Voyant, AI analysis does not present detailed data; it only provides conclusions, which tend to ignore the writing process. This makes AI analysis unsuitable for delicate analysis.
+
+## ChatGPT Result
+Here is an integrated literary and rhetorical analysis of three speeches by President Volodymyr Zelenskyy - each delivered in a different setting but connected by core thematic and stylistic features.
+
+### 1. Universal Appeal Through Narrative and Moral Frameworks
+Across the speeches, Zelensky constructs narratives rooted in identity, values, and moral urgency rather than purely political argumentation. Whether speaking to foreign legislatures or domestic audiences, his language frames Ukraine's struggle not merely as a geopolitical conflict but as a civilizational moral choice:
+In his address to the Althing (Iceland's Parliament), Zelensky draws on shared cultural values - freedom, democracy, and historical identity - to make Ukraine's defense legible to listeners unfamiliar with specific military details. He invokes common heritage ("Our cultures have been well acquainted...") and positions Ukraine's fight as a universal defense of freedom, not just national survival. (American Rhetoric)
+In the Taras Shevchenko National Prize speech, he foregrounds culture as a site of memory and emotional resilience, suggesting that art and storytelling are integral to national identity and endurance. Rather than discussing strategy or policy, he amplifies how cultural expression sustains morale and collective self-understanding. (ウクライナ大統領公式サイト)
+Rhetorical effect: This universalized moral framing builds solidarity (external and internal) and morally legitimizes Ukraine's cause beyond narrow self-interest.
+
+### 2. Crafted Dual Audience Strategy
+Zelensky consistently employs a two-tier rhetorical approach:
+a) Domestic: Identity and Unity
+In his speech at the Verkhovna Rada on the Day of Ukrainian Statehood, Zelensky uses evocative, almost mythopoetic language to stitch national history to the present war:
+He invokes collective memory ("millennia of culture") and contrasts Ukraine's democratic evolution with what he characterizes as Russian tyranny. (ウクライナ大統領公式サイト)
+The nation becomes a character in a story of resistance - "not just those who tried, but those who preserved" - framing perseverance as heroic and inevitable. (ウクライナ大統領公式サイト)
+Rhetorical effect: By reminding Ukrainians of their historical continuity and collective self-worth, Zelensky strengthens internal unity and resilience.
+b) International: Shared Values and Moral Reciprocity
+When speaking internationally - as before the Icelandic parliament - he does not just ask for support; he frames solidarity as aligned because of mutual values, not transactional interests. (Government of Iceland)
+Rhetorical effect: This elevates Ukraine's position from a supplicant nation to a co-defender of shared global values, inviting solidarity based on principle.
+
+### 3. Use of Emotional and Ethical Appeals (Pathos + Ethos)
+Zelensky's rhetoric often combines emotional resonance with ethical authority:
+Emotional stories of deportations, cultural loss, and suffering (e.g., in the Iceland speech) heighten empathy and personalize the costs of war. (American Rhetoric)
+Ethical positioning occurs when culture - not just security - is named worthy of defense. In the cultural speech, artists and storytellers become legitimate defenders of the nation's character, blurring boundaries between battlefield and home front. (ウクライナ大統領公式サイト)
+Together, these appeals elevate his discourse from strategic argument to existential moral claim - that Ukraine's fight is both lived human experience and ethical imperative.
+
+### 4. Metaphor and Symbolism
+Across these speeches, Zelensky uses cultural metaphors (heritage, narrative, memory), heroic imagery (multimillion-strong nation as heroes), and civilizational binaries (freedom vs. tyranny). This symbolism does not merely decorate the speeches - it reorients the listener's moral compass. In effect, the speeches read as implicit essays about what defines human dignity and community under threat.
+
+### 5. Rhetorical Consistency Across Contexts
+| Setting | Primary Rhetorical Focus | Core Strategy |
+| --- | --- | --- |
+| Iceland Parliament | Shared values, moral dimension of war | Ethos + Pathos to build global solidarity |
+| National Culture Speech | Cultural resilience | Emotional resonance and nationhood as story |
+| Verkhovna Rada on Statehood | Identity and collective narrative | Evocative symbolism and unified resolve |
+
+### Overall Literary/Rhetorical Impression
+Zelensky's rhetoric can best be described as narrative-driven, values-centered, and dual-directional. He crafts messages that resonate both internally (national ethos) and externally (global solidarity). This approach ensures that his speeches function as instruments of psychological resilience and international persuasion, making them not just political statements, but sustained moral arguments about freedom, human dignity, and collective destiny.
 
 
 
