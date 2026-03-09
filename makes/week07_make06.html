@@ -1,47 +1,46 @@
 ﻿<!DOCTYPE html>
-<html lang=\"en\">
+<html lang="en">
   <head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Week 7 窶・Mapping AI Worlds</title>
-    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
-    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
-    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap\">
-    <link rel=\"stylesheet\" href=\"../styles/site.css\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 Make 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="../styles/site.css">
   </head>
-  <body class=\"site-page\">
-    <header class=\"site-header\">
-      <div class=\"container\">
-        <h1 class=\"site-title\"><a href=\"../index.html\">DH101</a></h1>
-        <p class=\"tagline\">Critical Making this Semester</p>
+  <body class="site-page">
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
+        <p class="tagline">Critical Making this Semester</p>
       </div>
     </header>
-    <main class=\"container site-main\">
-      <textarea id=\"md-source\" style=\"display:none\"># Week 7 窶・Mapping AI Worlds
+    <main class="container site-main">
+      <textarea id="md-source" style="display:none"># Yugen Somiya_Make6
 
-## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+## Map I made
+https://www.google.com/maps/d/edit?mid=1Kauo4KoK2d8XfEx_0IpwjHbKfc_kMzA&usp=sharing
 
-## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+## Research Documentation (300-500 words)
+In this project, I primarily investigated the distribution of data centers. To do this, I used DATA CENTERS.com to look up the construction sites of data centers owned by Meta and Google and displayed them on Google Maps. I was able to quickly find many of the data centers located in the United States, but I struggled to find data centers scattered across Asian countries such as Malaysia, Singapore, and Taiwan. It was also difficult to locate data centers deep in the mountains of Northern Europe. In the United States, data centers were built in suburban areas or near cities to a certain extent, but in Northern Europe, this was not the case and they were built in rather remote areas. Many of these data centers in the United States are located in areas with high populations, meaning there are many tech company customers. However, I was surprised to find that data centers in Northern Europe are concentrated in sparsely populated, cold regions. This is probably because data servers generate a lot of heat, which makes cooling costs very high, and so building them in colder regions allows for more efficient operation. I was also surprised to find that data centers are somewhat unevenly distributed across regions. In Asia, Google has many data centers in Malaysia and Taiwan, but hardly any in other Asian countries. In Europe, there are many data centers in Belgium, Germany, and Nordic countries, but I could not find any Google or Meta data centers in Italy, France, or Eastern European countries. This is likely because Google and Meta concentrate their data centers in areas with high population density.
 
-## Reflection
-Respond to this week窶冱 reflection prompt in 200窶・00 words.
+## Artist Statement (250 words)
+The map shows that data centers are being built intensively in the United States and Europe, where demand is high. Google, in particular, has nearly 50 data centers worldwide and wields significant power in data infrastructure. This is evidence of neo-colonialism being perpetrated by these large tech companies, as discussed in the discussion. In particular, two Google data centers are in operation in Malaysia, suggesting that the company wields significant influence. However, no data centers have been built in other developing countries, suggesting that these countries, where issues such as women and minorities are more likely to be severe, may be left behind in the digital revolution due to the "corporate strategies of private companies." In addition to mapping data centers, mapping power generation facilities and population distribution would have clarified the relationship between data centers, power generation capacity, and demand. This is because data centers consume a lot of electricity, and there seems to be a correlation between a country's or region's power generation capacity and the location of the data center. Also, mapping mining sites might have revealed that rare metals and other mineral resources are extracted in developing countries but are used exclusively in developed countries. From a data feminism perspective, this work sheds light on power and visibility in the digital age. The map reveals who controls the infrastructure and who benefits from it, making the invisible visible. In other words, the map illustrates how physical geography, energy, and policy influence digital power owned by large technology companies.
 
-## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
-- What AI generated:
-- What you changed or decided:      </textarea>
-      <div id=\"content\"></div>
+## Attribution
+All data sources cited
+Map tool used : Google map
+Website I use : https://www.datacenters.com/
+Any AI assistance disclosed
+  ChatGPT : Used to investigate the characteristics of land for data center construction
+      </textarea>
+      <div id="content"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
     </footer>
-    <script src=\"https://cdn.jsdelivr.net/npm/marked/marked.min.js\"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
       document.getElementById("content").innerHTML = marked.parse(mdSource);
