@@ -5,7 +5,7 @@ layout: default
 # Week 5 gif & Remix Culture
 
 ## The Artifact
-![Week 5 artifact GIF - Animated GIF of the Week 5 remix culture artifact](week05_make04/assets/gif_for_class.gif)
+![Week 5 artifact GIF - alt text: Animated GIF of the Week 5 remix culture artifact](week05_make04/assets/gif_for_class.gif)
 
 ## Process Notes
 How did you make this?

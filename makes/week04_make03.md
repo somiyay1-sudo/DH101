@@ -5,7 +5,7 @@ layout: default
 # Week 4  EComic & Storytelling
 
 ## The Artifact
-![Week 4 artifact GIF - Animated GIF of the Week 4 storytelling artifact](assets/ezgif.com-crop.gif)
+![Week 4 artifact GIF - alt text: Animated GIF of the Week 4 storytelling artifact](assets/ezgif.com-crop.gif)
 
 ## Process Notes
 How did you make this?

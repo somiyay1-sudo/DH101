@@ -17,8 +17,8 @@ As the president of Ukraine is currently at war with Russia, words like "Ukraine
 Using Voyant made certain structural features much clearer to me, particularly the repetition of intimate forms of address toward those who respect Ukraine and its identity. It revealed patterns in word frequency and emphasis that I might have missed with a casual reading. However, the tool was limited to showing surface-level trends. It did not help me interpret the emotional or thematic significance behind the repetitions, which required my own analysis.
 
 ## Result of Voyant
-![Voyant result 1 - Voyant analysis visualization of Zelensky speech texts (result 1)](week06_make05/assets/gD4pnQAAAAZJREFUAwAvM5TM7FOSgAAAABJRU5ErkJggg.png)
-![Voyant result 2 - Voyant analysis visualization of Zelensky speech texts (result 2)](week06_make05/assets/R0JTZAAAABklEQVQDAITF5oZPwmzWAAAAAElFTkSuQmCC.png)
+![Voyant result 1 - alt text: Voyant analysis visualization of Zelensky speech texts (result 1)](week06_make05/assets/gD4pnQAAAAZJREFUAwAvM5TM7FOSgAAAABJRU5ErkJggg.png)
+![Voyant result 2 - alt text: Voyant analysis visualization of Zelensky speech texts (result 2)](week06_make05/assets/R0JTZAAAABklEQVQDAITF5oZPwmzWAAAAAElFTkSuQmCC.png)
 
 ## ChatGPT analysis
 The ChatGPT analysis revealed that Zelensky's narratives are grounded in identity, values, and moral urgency rather than in purely political arguments. Additionally, the AI emphasizes that Zelensky's rhetoric often combines emotional resonance with ethical authority. Zelensky draws on shared cultural values - freedom, democracy, and historical identity - that include emotional aspects with which listeners can sympathize.
