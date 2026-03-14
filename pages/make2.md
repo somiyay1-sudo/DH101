@@ -9,7 +9,7 @@ layout: default
 ### Initial Prompt
 "Create selfie of the Japanese students who majors physics in US liberal arts college"
 
-![AI selfie - initial prompt](../makes/week02_make01/assets/make2_1.jpg)
+![AI selfie - initial prompt - AI-generated selfie of a Japanese physics student (initial prompt result)](../makes/week02_make01/assets/make2_1.jpg)
 
 ---
 
@@ -19,7 +19,7 @@ Could you make the Japanese male student's glasses more horizontally elongated, 
 
 The first image looks like a Japanese student, but she is a female. So, I ask to change to a male student. I also ask to change my hair color, my hair color is black.
 
-![AI selfie - first edit](../makes/week02_make01/assets/make2_2.jpg)
+![AI selfie - first edit - AI-generated selfie revised to a Japanese male student with black hair, black clothes, and glasses](../makes/week02_make01/assets/make2_2.jpg)
 
 ---
 
@@ -29,7 +29,7 @@ He should look younger and wear glasses.
 
 The AI-generated selfie was of an older, middle-aged man who wasn't wearing glasses, so I instructed him to create a picture of a younger student wearing glasses instead.
 
-![AI selfie - second edit](../makes/week02_make01/assets/make2_3.jpg)
+![AI selfie - second edit - AI-generated selfie revised to a younger student wearing glasses](../makes/week02_make01/assets/make2_3.jpg)
 
 ---
 
