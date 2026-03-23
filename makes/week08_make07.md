@@ -2,25 +2,28 @@
 layout: default
 ---
 
-# Week 8  ENetworks of Knowledge & Power
+# Make 7: Networks of Knowledge & Power
 
-## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+## Network Analysis (300 words)
+The central nodes in this diagram are ASML, TSMC, and NVIDIA. ASML, based in the Netherlands, is the world's largest manufacturer of semiconductor lithography equipment. ASML is the only company capable of producing state-of-the-art extreme ultraviolet (EUV) lithography systems. This technology is indispensable for fabricating high-performance semiconductors used in AI, smartphones, and automobiles. ASML commands a near-monopoly on this market. Semiconductor companies worldwide rely on ASML's lithography systems for manufacturing; consequently, every pathway in the supply chain passes through ASML. TSMC is the world's largest semiconductor contract manufacturer. It operates on a specialized foundry model, producing chips based on designs commissioned by other firms, such as Apple and NVIDIA. Rather than marketing its own branded products, TSMC is a corporate titan indispensable to modern industry. It holds a 90% global market share in cutting-edge 5nm and 3nm process technologies. Numerous AI companies commission TSMC to manufacture their semiconductors, positioning the company at the center of the supply chain. NVIDIA utilizes the semiconductors fabricated by TSMC to create AI chips. Headquartered in the United States, NVIDIA is one of the world's largest semiconductor manufacturers and holds a dominant market share in GPUs designed for AI and data center applications. AI firms such as OpenAI and Anthropic rely on NVIDIA's chips to power their operations.
 
-## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+The groups depicted in this diagram can be broadly categorized into six types: mineral resource suppliers, mineral resource traders, manufacturers of lithography equipment, semiconductor manufacturers, AI chip manufacturers, and developers of AI models. While there are numerous companies involved in developing AI models or consuming chips, the number of companies manufacturing lithography equipment or semiconductors is relatively small, with a select few firms dominating the market share. What came as a surprise was that ASML holds a monopoly on the market share for lithography equipment, and that Apple—despite manufacturing its own chips—does not supply them to other companies, thereby operating in isolation.
 
-## Reflection
-Respond to this week’s reflection prompt in 200 E00 words.
+While this network depicts the semiconductor supply chain, the companies featured within it are predominantly from Western nations—particularly the United States. Indeed, many of the entities currently engaged in AI development are American corporate giants such as Amazon, OpenAI, and Google. However, China and Russia are also actively pursuing AI development. Nevertheless, it proved impossible to obtain detailed information regarding China's AI sector or its semiconductor supply chain. Consequently, while this diagram illustrates a supply chain critical to U.S. technology firms, it omits the semiconductor and AI networks of China and other nations within the Global South; thus, it fails to reflect the technological advancements or supply chain risks associated with these countries.
 
-## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
-- What AI generated:
-- What you changed or decided:
+## Artist Statement (250 words)
+This diagram illustrates the significant power wielded by companies holding dominant market shares in their respective fields—specifically ASML in lithography equipment, TSMC in semiconductor manufacturing, and NVIDIA in AI chips. Many technology firms rely heavily on the manufacturing capabilities of these entities, and there are few viable alternative manufacturers available to take their place. Furthermore, the pursuit of high-performance AI chips necessitates an even greater reliance on upstream players like TSMC and ASML, thereby further amplifying the power of these companies. While the influence of these manufacturing firms is clearly visible, the power dynamics surrounding mineral resources have remained far less apparent. For one, the specific locations where mineral resources are extracted are often treated as trade secrets; moreover, since many of these extraction sites are situated in China or the Global South, the dynamics at play present a different landscape—one distinct from conventional corporate competition. In particular, the power associated with mineral resources of Chinese origin—presumed to be substantial given the scarcity of rare metals and silicon—is not fully visualized in this diagram. Had the center of this network been occupied by a Chinese enterprise—for instance, if a Chinese firm, rather than TSMC, had been the dominant force in semiconductor manufacturing—it is conceivable that a Chinese company might have developed generative AI ahead of its American counterparts and achieved success.
+
+## Accessibility improvement
+This site was built by Yugen Somiya for DH 101.
+I have tried to make it accessible by:
+
+On this page, I have implemented several improvements to enhance accessibility: I have increased the color contrast of the background to make the text easier to read; I have enlarged the font size; and we have added supplementary explanatory text. Furthermore, to ensure that users can return to the Home page from any other page, we have added a "Click here to return Home" link.
+
+If you encounter barriers, please contact me at somiya_y1@denison.edu.
+
+## Kumu
+<iframe src="https://embed.kumu.io/4ed3e497e35e6fdbe0de0f1717e33403" width="940" height="600" frameborder="0"></iframe>
 
 
 
