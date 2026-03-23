@@ -22,8 +22,9 @@ On this page, I have implemented several improvements to enhance accessibility: 
 
 If you encounter barriers, please contact me at somiya_y1@denison.edu.
 
-## Kumu
 <iframe src="https://embed.kumu.io/4ed3e497e35e6fdbe0de0f1717e33403" width="940" height="600" frameborder="0"></iframe>
+
+
 
 
 
