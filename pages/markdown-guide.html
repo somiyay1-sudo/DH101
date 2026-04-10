@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="../styles/site.css">
+  </head>
+  <body class="site-page">
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
+        <p class="tagline">Critical Making this Semester</p>
+      </div>
+    </header>
+    <main class="container site-main">
+      <textarea id="md-source" style="display:none"># Markdown Guide
+
+Quick reference for writing course pages and reflections.
+
+## Headings
+Use `#` for titles and smaller headings.
+
+```markdown
+# Page Title
+## Section
+### Subsection
+```
+
+## Paragraphs and Line Breaks
+Blank lines separate paragraphs. End a line with two spaces for a soft break.
+
+```markdown
+First line with a soft break.  
+Second line in the same paragraph.
+```
+
+## Emphasis
+
+```markdown
+*italic* or _italic_
+**bold**
+***bold italic***
+```
+
+## Lists
+Unordered, ordered, and task lists.
+
+```markdown
+- bullet item
+- another item
+
+1. first
+2. second
+
+- [x] done
+- [ ] to do
+```
+
+## Links and Images
+Use relative paths inside the repo.
+
+```markdown
+[Week 01 reflection](../reflections/week01.md)
+[Outside resource](https://example.com)
+![Alt text for image](../assets/images/example.png)
+```
+
+### Embedding local images
+- Put images in assets/images.
+- From reflections/ or pages/ folders, link with `../assets/images/filename.ext`.
+- Write helpful alt text that describes the image.
+
+```markdown
+![Alt text: campus map sketch](../assets/images/campus-sketch.png)
+```
+
+## Code and Quotes
+
+```markdown
+Inline `code` in a sentence.
+
+```
+code fence for multiple lines
+```
+
+> Blockquotes are great for citing sources.
+```
+
+## Tables
+
+```markdown
+| Item | Detail |
+| --- | --- |
+| Row 1 | Text |
+| Row 2 | More text |
+```
+
+## Horizontal Rules and Escaping
+
+```markdown
+---
+\*Escape characters\* so they render literally.
+```
+
+## Footnotes (optional)
+
+```markdown
+Here is a footnote.[^1]
+
+[^1]: Footnote text goes here.
+```
+
+## Course Tips
+- Keep filenames lowercase with hyphens (no spaces).
+- Place images in assets/images and link with ../assets/images/filename.png from pages/.
+- Preview markdown in VS Code (built-in) before submitting.
+- Keep headings in order (do not jump from # to ### directly).
+- Use descriptive alt text for images (what someone would miss if the image did not load).
+- When copying from Word/Google Docs, paste as plain text to avoid odd characters.
+
+## Weekly Reflection Template
+
+Use this structure for weekly reflections (adjust prompts as needed).
+
+```markdown
+# Week 13 Reflection
+
+## Prompt 1: Key insight
+Write 3-5 sentences answering the question. Focus on what surprised you or changed your view.
+
+## Prompt 2: Example or evidence
+- Briefly describe an artifact, reading, or class activity.
+- Explain how it supports or challenges your thinking.
+
+## Prompt 3: Next steps
+1. What will you try next week?
+2. What do you still need to learn or clarify?
+
+## Media (optional)
+![Alt text: short description](../assets/images/example.png)
+```
+
+Tips for reflections
+- Start with a clear H1 title: `# Week X Reflection`.
+- Keep sections in order; avoid skipping heading levels.
+- Prefer short paragraphs and bullet points over long blocks of text.
+- If you include images, explain why they matter in the surrounding text.
+</textarea>
+      <div id="content"></div>
+    </main>
+    <footer>
+      <p>&copy; 2026 DH101 Critical Making</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      const mdSource = document.getElementById("md-source").value;
+      document.getElementById("content").innerHTML = marked.parse(mdSource);
+    </script>
+  </body>
+</html>
