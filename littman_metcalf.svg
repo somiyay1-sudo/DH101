@@ -1,11 +1,4 @@
-#include <fstream>
-#include <iostream>
-#include <string>
-
-int main() {
-        const std::string output_path = "littman_metcalf.svg";
-
-        const std::string svg = R"SVG(<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
     <defs>
         <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
@@ -59,17 +52,3 @@ int main() {
     <circle cx="620" cy="150" r="4" fill="#1a1a1a" />
     <text x="635" y="155" class="label">1st Order</text>
 </svg>
-)SVG";
-
-        std::ofstream out_file(output_path, std::ios::binary);
-        if (!out_file) {
-                std::cerr << "Failed to open output file: " << output_path << std::endl;
-                return 1;
-        }
-
-        out_file << svg;
-        out_file.close();
-
-        std::cout << "Wrote SVG to " << output_path << std::endl;
-        return 0;
-}
