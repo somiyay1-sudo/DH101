@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH101 - Critical Making</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="styles/site.css">
 </head>
 <body class="site-home">
     <header class="site-header">
-        <div class="container">
-            <h1 class="site-title">DH101</h1>
-            <p class="tagline">Critical Making this Semester</p>
-            <nav>
+        <div class="container header-grid">
+            <div class="site-brand">
+                <h1 class="site-title">DH101</h1>
+                <p class="tagline">Critical Making this Semester</p>
+            </div>
+            <nav class="site-nav">
                 <a href="#makes">Makes</a>
                 <a href="#reflections">Reflections</a>
                 <a href="#pages">Pages</a>
@@ -23,11 +22,37 @@
     </header>
 
     <main class="container site-main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">DH101 / Critical Making</p>
+                    <h2 id="hero-title">Making, reflection, and AI experiments in one evolving journal.</h2>
+                    <p class="hero-lede">This site collects weekly makes, readings, and notes from the semester. Browse the project log, then dive into reflections and curated pages.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="#makes">Explore makes</a>
+                        <a class="button ghost" href="#reflections">Read reflections</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <h3>At a glance</h3>
+                    <ul class="hero-list">
+                        <li><span class="label">Makes</span><span class="value">13</span></li>
+                        <li><span class="label">Reflections</span><span class="value">13</span></li>
+                        <li><span class="label">Pages</span><span class="value">5</span></li>
+                    </ul>
+                    <div class="hero-note">Updated weekly with new course work and artifacts.</div>
+                </div>
+            </div>
+        </section>
+
         <!-- Selfie Section moved to Make 2 (week02_make01.md) -->
 
         <!-- Makes Section -->
-        <section id="makes">
-            <h2>Makes</h2>
+        <section id="makes" class="section">
+            <div class="section-head">
+                <h2>Makes</h2>
+                <p>Weekly experiments, prototypes, and critical remixes.</p>
+            </div>
             <div class="items-list">
                 <a href="makes/week01_make00.html" class="item">
                     <div class="item-title">Make 1: Reverse-engineer a DH/AI project</div>
@@ -65,7 +90,7 @@
                     <div class="item-title">Make 10. AI & Labor</div>
                 </a>
                 <a href="makes/week12_make11.html" class="item">
-                    <div class="item-title">Week 12</div>
+                    <div class="item-title">Make 11: AI & Ecology</div>
                 </a>
                 <a href="makes/week13_make12.html" class="item">
                     <div class="item-title">Week 13</div>
@@ -74,8 +99,11 @@
         </section>
 
         <!-- Reflections Section -->
-        <section id="reflections">
-            <h2>Reflections</h2>
+        <section id="reflections" class="section">
+            <div class="section-head">
+                <h2>Reflections</h2>
+                <p>Reading responses, personal notes, and emerging questions.</p>
+            </div>
             <div class="items-list">
                 <a href="reflections/week01.html" class="item">
                     <div class="item-title">Week 1</div>
@@ -121,8 +149,11 @@
         </section>
 
         <!-- Pages Section -->
-        <section id="pages">
-            <h2>Pages</h2>
+        <section id="pages" class="section">
+            <div class="section-head">
+                <h2>Pages</h2>
+                <p>Course essentials, accessibility, and supporting resources.</p>
+            </div>
             <div class="items-list">
                 <a href="pages/about.html" class="item">
                     <div class="item-title">About</div>
