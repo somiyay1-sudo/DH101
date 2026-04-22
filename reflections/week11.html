@@ -1,33 +1,31 @@
 ﻿<!DOCTYPE html>
-<html lang=\"en\">
+<html lang="en">
   <head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 11 Reflection</title>
-    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
-    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
-    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap\">
-    <link rel=\"stylesheet\" href=\"../styles/site.css\">
+    <link rel="stylesheet" href="../styles/site.css">
   </head>
-  <body class=\"site-page\">
-    <header class=\"site-header\">
-      <div class=\"container\">
-        <h1 class=\"site-title\"><a href=\"../index.html\">DH101</a></h1>
-        <p class=\"tagline\">Critical Making this Semester</p>
+  <body class="site-page">
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
+        <p class="tagline">Critical Making this Semester</p>
       </div>
     </header>
-    <main class=\"container site-main\">
-      <textarea id=\"md-source\" style=\"display:none\">> **Markdown help:** See [markdown-guide.md](../pages/markdown-guide.md) for formatting tips and a reflection template.
+    <main class="container site-main">
+      <textarea id="md-source" style="display:none"># Week 11 Reflection
 
-# Week 11 Reflection
+## Reflect 11: Who does the invisible work of AI, and who profits from it?
 
-Reflect 11: Who does the invisible work of AI, and who profits from it?      </textarea>
-      <div id=\"content\"></div>
+The invisible work behind AI is carried out by miners, especially in the Democratic Republic of the Congo, where cobalt is extracted under dangerous and exploitative conditions. Many of these miners are adults trying to support families, but children also comprise this workforce, demonstrating the profound impact of poverty and inequality on the supply chain. These miners work long hours for very low wages to supply the minerals needed for batteries and digital technologies. While major tech companies, battery manufacturers, mineral traders, and other corporations at the top of the supply chain reap the greatest financial rewards, the miners who endure the harshest conditions receive only a tiny fraction of the value they create. This creates a sharp imbalance between risk and reward. Those who face the greatest physical danger, insecurity, and environmental harm are typically the least able to influence prices, labor standards, or contracts. Many tech companies fail to return their profits to those responsible for mineral extraction, treating them as if they were a colony.
+      </textarea>
+      <div id="content"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
     </footer>
-    <script src=\"https://cdn.jsdelivr.net/npm/marked/marked.min.js\"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
       document.getElementById("content").innerHTML = marked.parse(mdSource);

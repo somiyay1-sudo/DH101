@@ -1,33 +1,31 @@
 ﻿<!DOCTYPE html>
-<html lang=\"en\">
+<html lang="en">
   <head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 12 Reflection</title>
-    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
-    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
-    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap\">
-    <link rel=\"stylesheet\" href=\"../styles/site.css\">
+    <link rel="stylesheet" href="../styles/site.css">
   </head>
-  <body class=\"site-page\">
-    <header class=\"site-header\">
-      <div class=\"container\">
-        <h1 class=\"site-title\"><a href=\"../index.html\">DH101</a></h1>
-        <p class=\"tagline\">Critical Making this Semester</p>
+  <body class="site-page">
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
+        <p class="tagline">Critical Making this Semester</p>
       </div>
     </header>
-    <main class=\"container site-main\">
-      <textarea id=\"md-source\" style=\"display:none\">> **Markdown help:** See [markdown-guide.md](../pages/markdown-guide.md) for formatting tips and a reflection template.
+    <main class="container site-main">
+      <textarea id="md-source" style="display:none"># Week 12 Reflection
 
-# Week 12 Reflection
+## Reflect 12: AI & Ecology, Is AI sustainable? What ecological trade-offs are we willing to accept?
 
-Reflect 12: Is AI sustainable? What ecological trade-offs are we willing to accept?      </textarea>
-      <div id=\"content\"></div>
+I think AI is not sustainable if it developed rapoidly. Water scarcity caused by data centers is one critical enviromental issues on AI. Despite contributing little to local economies, data centers consume enormous quantities of water. The proliferation of data centers implies a corresponding reduction in the amount of water available for our use. In this respect, AI is not sustainable. Furthermore, it is widely predicted that as AI advances, human employment opportunities will diminish. If AI simultaneously consumes vast amounts of water and displaces our jobs, humanity will face a "one-two punch" -- suffering from both joblessness and water shortages. If AI is allowed to develop haphazardly -- leading to an excessive proliferation of data centers -- it could degrade the environment; far from enriching human lives, it risks making them worse.
+      </textarea>
+      <div id="content"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
     </footer>
-    <script src=\"https://cdn.jsdelivr.net/npm/marked/marked.min.js\"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
       document.getElementById("content").innerHTML = marked.parse(mdSource);
