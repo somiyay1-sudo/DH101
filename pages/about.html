@@ -10,18 +10,38 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
-      <textarea id="md-source" style="display:none"># About Me
+    <main class="container site-main" id="main-content">
+      <textarea id="md-source" style="display:none">
+# About Me
 
-Introduce yourself and your interests.
-</textarea>
-      <div id="content"></div>
+I'm Yugen Somiya, physics major student of denison university. I have decided to dedicate my career to trapping atomic ions and exploring their applications in quantum information, driven by my fascination with the inherent uncertainty of quantum mechanics and the structure of atoms. The two main challenges in quantum technology are achieving large-scale operation and high fidelity. Although trapping atomic ions offers long coherence times and enables high-fidelity calculations, scaling up remains difficult. To address these challenges, I plan to study the mechanism and application of trapping atomic ions as well as different approaches to quantum technologies, including superconductivity, photonic technology, systems of neutral atoms, and error correction.
+
+These approaches provide different pathways that can be implemented for trapping ions, and expanding my study to quantum error correction might be helpful for implementing large-scale computations while maintaining high fidelity. To achieve this goal, I will need to engage in deep interdisciplinary learning through class and reading journals. Since trapping atomic ions lies at the intersection of chemistry and physics, I would like to take chemistry courses to improve my understanding of atoms and ions, as well as further courses in physics at Denison.
+
+In the research, I am particularly interested in improving the production and loading of atomic ions into traps, as necessary prerequisite for achieving a stable quantum qubit without decoherence is a crucial step for scalable quantum networks. Particularly, preventing impurity ions, such as molecular ions, from being trapped is important to reduce motional heating and decoherence even in large-scale qubits. The two main challenges in quantum technology are achieving large-scale operation and high fidelity, and although trapping atomic ions offers long coherence times and enables high-fidelity calculations, scaling up remains difficult.
+
+To address these challenges, I plan to study the mechanism and application of trapping atomic ions as well as different approaches to quantum technologies, including superconductivity, photonic technology, systems of neutral atoms, and error correction. These approaches provide different pathways that can be implemented for trapping ions, and expanding my study to quantum error correction might be helpful for implementing large-scale computations while maintaining high fidelity. To achieve this goal, I will need to engage in deep interdisciplinary learning through class and reading journals, and since trapping atomic ions lies at the intersection of chemistry and physics, I would like to take chemistry courses to improve my understanding of atoms and ions.
+
+In the Ph.D. program, I plan to refine my experimental skills by actively testing and iterating ideas in a hands-on laboratory environment. In the research, I am particularly interested in improving the production and loading of atomic ions into traps, as necessary prerequisite for achieving a stable quantum qubit without decoherence is a crucial step for scalable quantum networks, and preventing impurity ions, such as molecular ions, from being trapped is important to reduce motional heating and decoherence even in large-scale qubits. Ultimately, I aspire to advance large-scale quantum communication systems, shape the future of this field, and inspire the next generation of researchers.
+
+![Yugen Somiya portrait.](yugen_somiya_2.jpg)
+      </textarea>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
+      <p><a href="../index.html">Back to DH101 home</a></p>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -29,7 +49,12 @@ Introduce yourself and your interests.
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

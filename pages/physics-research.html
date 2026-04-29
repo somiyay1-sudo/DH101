@@ -19,22 +19,30 @@
     <main class="container site-main">
       <textarea id="md-source" style="display:none"># Physics Research
 
-## Trapping Atomic Ions for Quantum Network
-Ion trapping keeps charged particles isolated and stable so that quantum states can survive long enough to be controlled. With ions confined in an electromagnetic trap, lasers can manipulate them precisely and generate photons that carry quantum information between distant nodes.
+## Quantum communication and physical implementations
 
-## My Research: Photoionization of Lanthanum
-Double-ionized lanthanum (La2+) is a promising qubit candidate because it can be laser-cooled and emits infrared photons compatible with optical fiber. A key step is creating and trapping ions. This project studies a two-photon photoionization sequence:
+Quantum communication is a way of sending information using the laws of quantum physics rather than classical signals. The basic idea is that information is stored in very small systems such as particles of light, and these systems behave in ways that prevent copying or measuring them without disturbance. Because of this, if someone tries to eavesdrop, the act of measurement changes the signal and reveals their presence. This is why quantum communication is often associated with extremely secure communication.
 
-- A 706 nm laser excites the ground state to a metastable state.
-- A 258 nm laser drives excitation to a higher 3G3 state, releasing a second electron.
+There are several major ways to physically build quantum systems. Trapped ions use charged atoms held in place by electric fields and controlled with lasers. Superconducting systems use tiny electrical circuits cooled to extremely low temperatures so that they exhibit quantum behavior. Photonic systems use light itself to carry information, which makes them naturally suited for long-distance communication. These are simply different physical implementations of the same underlying idea, each with its own advantages and challenges.
 
-## Why it matters
-Trapped ions enable precise control for quantum networks and long-distance communication. Stable quantum memories and photonic links can improve both the speed and security of future information systems.
+## Focus on trapped ions
+
+A trapped-ion system works by holding individual ions—atoms that have lost an electron—in space using electric fields inside a vacuum chamber. You can think of them as tiny charged particles floating in place. Lasers are used to cool them down and control their internal states, which act like quantum bits.
+
+This approach is known for its precision. The ions are very well isolated from their environment, so they can maintain their quantum properties for a long time. At the same time, lasers allow extremely accurate control over each ion. The main limitation is that as the number of ions increases, the system becomes harder to manage, because all the ions influence each other and must be controlled carefully.
 
 ## Ion trap photo
-![Charged flour grains held in a Paul quadrupole ion trap, illuminated by green light.](https://upload.wikimedia.org/wikipedia/commons/9/93/Paul_quadrupole_trap.jpg)
+![A linear Paul ion trap inside a vacuum chamber. View ports around the chamber allow laser light to pass through.](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Linear_Paul_ion_trap.jpg/1280px-Linear_Paul_ion_trap.jpg)
 
-Photo: Jan Pavelka, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), via [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Paul_quadrupole_trap.jpg).
+Photo: Coldsmokerider, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Linear_Paul_ion_trap.jpg).
+
+## Ion loading in trapped-ion systems
+
+Ion loading is simply the process of creating ions inside the trap so that the experiment can begin. Typically, the process starts with neutral atoms, which are easier to produce. These atoms are then turned into ions so that they can be held by the electric fields.
+
+Photoionization uses lasers to remove an electron from an atom in a controlled way. It is gentle and precise, which makes it the most commonly used method in modern experiments. Electron bombardment uses a stream of fast electrons to knock electrons off atoms. It is simpler but less clean, since it can introduce unwanted charges into the system. Laser ablation uses a powerful laser pulse to blast atoms off a solid material, creating a cloud that includes ions. This method is useful for materials that are hard to vaporize but is less controlled.
+
+All of these methods are different ways of achieving the same goal: producing ions in the right place with minimal disturbance, because the quality of this initial step strongly affects everything that follows in the experiment.
 
 ## Reference
 - Olmschenk, S. "Doubly Ionized Lanthanum as a Qubit Candidate for Quantum Networks." Physical Review A 105(4), 2022.
