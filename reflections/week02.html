@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Week 2 Reflection
 
 ## Reflect 2: Can AI help us define what it means to be human, or does it reduce us to patterns?
@@ -22,7 +30,7 @@ I think AI reduces us to patterns. People are losing their individuality and bec
 
 So, people can help you make a decision, but your decision is already patterned by AI.
       </textarea>
-      <div id="content"></div>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -30,7 +38,12 @@ So, people can help you make a decision, but your decision is already patterned 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

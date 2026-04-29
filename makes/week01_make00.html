@@ -10,13 +10,21 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none">
 # Make 1: Reverse-engineer a DH/AI project
 
@@ -47,8 +55,8 @@ The project has successfully visualized American history by using AI to sort and
 ## Reflection (200-300 words)
 In this Photogrammar project, "making" means exploring the connection between photographs and text (e.g., place, time, and message). The researcher expresses the history of the Great Depression and World War II through pictures of locations. Photogrammar aggregates, maps, and tags images, presenting them in ways that extend beyond their original form. The project creates new relationships between images, metadata (e.g., location, date, classification, and photographer), and visualizations (e.g., maps, treemaps, and dashboards) that users can explore. The nature of that "making" changes in scale and character when AI is used. In this context, machines do not take photographs; rather, they mediate how large collections are viewed and interpreted. The machine's participation can automatically extract semantic metadata, classify features, and generate structured annotations that make the archive searchable and explorable on a scale far beyond what one person could achieve manually. In this project, the machine was able to collect and label enormous pictures from the United States. This kind of machine participation shifts photography from a human-centered act of creation and interpretation to a hybrid process in which digital tools produce new knowledge about images by quantifying patterns across thousands of photographs.
       </textarea>
-      <div id="content"></div>
-      <p><a href="../index.html">clich here to back home</a></p>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
+      <p><a href="../index.html">Back to DH101 home</a></p>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -56,7 +64,12 @@ In this Photogrammar project, "making" means exploring the connection between ph
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

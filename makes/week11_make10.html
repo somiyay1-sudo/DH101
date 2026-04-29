@@ -13,13 +13,22 @@
         <link rel="stylesheet" href="../styles/site.css">
       </head>
       <body class="site-page">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
         <header class="site-header">
-          <div class="container">
-            <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-            <p class="tagline">Critical Making this Semester</p>
+          <div class="container header-grid">
+            <div class="site-brand">
+              <p class="site-title"><a href="../index.html">DH101</a></p>
+              <p class="tagline">Critical Making this Semester</p>
+            </div>
+            <nav class="site-nav" aria-label="Primary">
+              <a href="../index.html#makes">Makes</a>
+              <a href="../index.html#reflections">Reflections</a>
+              <a href="../index.html#pages">Pages</a>
+            </nav>
           </div>
         </header>
-        <main class="container site-main">
+        <main class="container site-main" id="main-content" aria-labelledby="page-title">
+          <h1 id="page-title">Make 10</h1>
           <h2>Research Notes (300 words)</h2>
           <p>For this project, I conducted an analysis drawing upon resources from Amnesty International, Save the Children, Human Rights Watch, and the U.S. Department of Labor. During the research phase, I utilized tools such as ChatGPT and Perplexity to summarize the contents of past reports issued by human rights organizations. While it was relatively easy to grasp the general overview of mineral extraction in the Democratic Republic of the Congo, including issues like child labor and substandard working conditions, finding specific references to actual accidents proved extremely difficult due to a scarcity of detailed information. Ultimately, I discovered a report on Save the Children's website describing an incident in which a child was killed in a landslide while working. This experience highlighted how specific details regarding such shocking and sensitive accidents are often hard to locate, almost as if they are being deliberately concealed. Through this project, I was astonished to discover that the wage gap between the boys working in the DR Congo and the employees of U.S. tech companies is even wider than I had imagined. Of course, I acknowledge that the cost of living differs significantly between the Congo and the United States; furthermore, given that Apple invented the iPhone, it is understandable that profits would flow to companies of this nature. However, I found it utterly shocking that, despite these corporations generating colossal profits, labor practices reminiscent of the colonial era continue to persist in the region today. While some attempt to justify this low-wage labor by arguing that it enables consumers in the U.S. to purchase electronic devices at lower prices, I believe such reasoning is fundamentally flawed. The profits derived from the labor of Congolese boys, who are effectively treated as slaves, are utilized neither for the benefit of consumers nor for the Congolese people themselves, but rather to serve the vested interests of a select few within the tech industry.</p>
 
@@ -57,7 +66,7 @@
             <li>"Electronic Waste Recycling Rate." Our World in Data, ourworldindata.org/grapher/electronic-waste-recycling-rate.</li>
           </ul>
 
-          <p><a href="../index.html">Click here to go back home</a></p>
+          <p><a href="../index.html">Back to DH101 home</a></p>
         </main>
         <footer>
           <p>&copy; 2026 DH101 Critical Making</p>

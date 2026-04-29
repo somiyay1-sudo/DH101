@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Week 6 Reflection
 
 ## Reflect 6: What do we gain/lose when machines "read" literature for us?
@@ -22,7 +30,7 @@ When machines read literature, they will develop an "excellent memory" and an "o
 
 While machines will gain an "excellent memory" and an "objective perspective" when they read literature, they will lose "subjective and diverse interpretations." Humans, on the other hand, can use their imagination to consider subsequent developments and interpretations of a story. Sometimes, this leads to a reader's interpretation differing from the author's. However, we humans do not consider this subjective interpretation wrong; it is simply one of many diverse impressions. However, machines may judge these interpretations as "incorrect" if they differ from the author's intentions. This is because analyzing word context, background, frequency, etc., can provide evidence that the interpretation is incorrect.
       </textarea>
-      <div id="content"></div>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -30,7 +38,12 @@ While machines will gain an "excellent memory" and an "objective perspective" wh
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

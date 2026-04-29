@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Week 10 Reflection
 
 ## Reflect 10: How does AI change our relationship to play, rules, and narrative?
 
 The advent of AI compels us to demand greater responsibility and ethical awareness in our relationships with play, rules, and narrative. Until now, humans were the sole agents of judgment in all human activities. However, with the rise of AI, the capacity to make judgments has expanded to include AI systems. Yet, under current circumstances, it remains unclear whether AI itself bears responsibility for the judgments it renders. In fact, should an error occur, the burden of responsibility likely falls on the human user who utilized the AI. Furthermore, "codes of ethics" have been established to govern the use of AI. AI appears to call for a broader scope of responsibility, along with a heightened ethical consciousness on the part of the user, in relation to our engagement with play, rules, and narrative.
       </textarea>
-      <div id="content"></div>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -28,7 +36,12 @@ The advent of AI compels us to demand greater responsibility and ethical awarene
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Week 11 Reflection
 
 ## Reflect 11: Who does the invisible work of AI, and who profits from it?
 
 The invisible work behind AI is carried out by miners, especially in the Democratic Republic of the Congo, where cobalt is extracted under dangerous and exploitative conditions. Many of these miners are adults trying to support families, but children also comprise this workforce, demonstrating the profound impact of poverty and inequality on the supply chain. These miners work long hours for very low wages to supply the minerals needed for batteries and digital technologies. While major tech companies, battery manufacturers, mineral traders, and other corporations at the top of the supply chain reap the greatest financial rewards, the miners who endure the harshest conditions receive only a tiny fraction of the value they create. This creates a sharp imbalance between risk and reward. Those who face the greatest physical danger, insecurity, and environmental harm are typically the least able to influence prices, labor standards, or contracts. Many tech companies fail to return their profits to those responsible for mineral extraction, treating them as if they were a colony.
       </textarea>
-      <div id="content"></div>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -28,7 +36,12 @@ The invisible work behind AI is carried out by miners, especially in the Democra
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

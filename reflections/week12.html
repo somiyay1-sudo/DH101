@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Week 12 Reflection
 
 ## Reflect 12: AI & Ecology, Is AI sustainable? What ecological trade-offs are we willing to accept?
 
 I think AI is not sustainable if it developed rapoidly. Water scarcity caused by data centers is one critical enviromental issues on AI. Despite contributing little to local economies, data centers consume enormous quantities of water. The proliferation of data centers implies a corresponding reduction in the amount of water available for our use. In this respect, AI is not sustainable. Furthermore, it is widely predicted that as AI advances, human employment opportunities will diminish. If AI simultaneously consumes vast amounts of water and displaces our jobs, humanity will face a "one-two punch" -- suffering from both joblessness and water shortages. If AI is allowed to develop haphazardly -- leading to an excessive proliferation of data centers -- it could degrade the environment; far from enriching human lives, it risks making them worse.
       </textarea>
-      <div id="content"></div>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -28,7 +36,12 @@ I think AI is not sustainable if it developed rapoidly. Water scarcity caused by
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

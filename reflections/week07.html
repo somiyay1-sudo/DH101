@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Week 7 Reflection
 
 ## Reflect 7: How does AI reshape global geographies of power, labor, and environment?
 
 The emergence of AI will likely accelerate the shift of power from governments to tech companies in global geographies. Until now, government agencies and the media have held most of the power, but as private companies develop AI, they will own the digital infrastructure rather than governments. This change directly reshapes global geographies of power, weakening the concept of government sovereignty and giving power to tech companies. However, I do not believe that advances in AI will significantly alter the global geographies, such as the distinction between developed and developing countries, in areas such as labor and the environment. In fact, it will likely reinforce existing disparities. This is because large tech companies are currently based in developed countries, and many of the mineral resources extracted in developing countries are used by developed countries.
       </textarea>
-      <div id="content"></div>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -28,7 +36,12 @@ The emergence of AI will likely accelerate the shift of power from governments t
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

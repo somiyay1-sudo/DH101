@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Week 8 Reflection
 
 ## Reflect 8: Who is visible/invisible in AI networks? How does visualization reveal or obscure power?
 
 In AI networks, major tech companies (e.g., Google and Amazon) and flagship models (e.g., Gemini and ChatGPT) are highly visible actors. Their contributions are well-documented and widely cited, creating the impression that innovation is concentrated and centralized. In contrast, many crucial contributors remain invisible. For instance, cases of children being trafficked into working in mines and laborers being forced to work in terrible conditions are often concealed. These hidden contributions include data labelers, low-paid contractors, and communities whose data is extracted to train models without recognition or consent. Visualization plays a powerful role in shaping these dynamics. Network diagrams, dashboards, and model visualizations can make complex systems legible by mapping the flow of data, influence, and decision-making processes. When used critically, these visualizations reveal hidden dependencies, such as reliance on global labor markets or specific data sources, and expose asymmetries in control and benefit. However, visualization can also obscure power. The search engines Google and Safari are operated by tech companies that can hide information that is inconvenient for them. In other words, accurate analysis may be difficult as long as tech companies control the sources, even if we try to visualize power through data visualization.
       </textarea>
-      <div id="content"></div>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -28,7 +36,12 @@ In AI networks, major tech companies (e.g., Google and Amazon) and flagship mode
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

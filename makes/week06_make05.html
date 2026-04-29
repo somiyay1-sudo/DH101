@@ -10,13 +10,21 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Week 6 EText & Distant Reading
 
 ## Make 5. Compare Voyant vs GPT text analysis
@@ -105,8 +113,8 @@ Across these speeches, Zelensky uses cultural metaphors (heritage, narrative, me
 
 ### Overall Literary/Rhetorical Impression
 Zelensky's rhetoric can best be described as narrative-driven, values-centered, and dual-directional. He crafts messages that resonate both internally (national ethos) and externally (global solidarity). This approach ensures that his speeches function as instruments of psychological resilience and international persuasion, making them not just political statements, but sustained moral arguments about freedom, human dignity, and collective destiny.      </textarea>
-      <div id="content"></div>
-      <p><a href="../index.html">clich here to back home</a></p>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
+      <p><a href="../index.html">Back to DH101 home</a></p>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -114,7 +122,12 @@ Zelensky's rhetoric can best be described as narrative-driven, values-centered, 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>

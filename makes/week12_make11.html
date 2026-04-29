@@ -10,13 +10,21 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Make 11: AI & Ecology
 
 ## Research Documentation (300 words)
@@ -40,8 +48,8 @@ At this point, the question remains: will AI benefits outweigh environmental des
   style="width: 100%; height: 900px; border: 1px solid #ccc;"
 ></iframe>
       </textarea>
-      <div id="content"></div>
-      <p><a href="../index.html">clich here to back home</a></p>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
+      <p><a href="../index.html">Back to DH101 home</a></p>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -49,7 +57,12 @@ At this point, the question remains: will AI benefits outweigh environmental des
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>
