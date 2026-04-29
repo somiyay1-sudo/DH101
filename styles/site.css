@@ -1,12 +1,14 @@
 :root {
   color-scheme: light;
-  --bg-1: #d1e2fb;
-  --bg-2: #b6cdee;
+  --bg-1: #b7dcff;
+  --bg-2: #8fc4f2;
+  --bg-3: #d7efff;
   --ink: #1f1a17;
   --muted: #4e443c;
   --accent: #b3612d;
   --accent-2: #234d4a;
-  --accent-neo: #2f7ea0;
+  --accent-neo: #2c8db6;
+  --accent-neo-dark: #1c6b8b;
   --card: #fffaf4;
   --card-soft: rgba(255, 255, 255, 0.82);
   --stroke: rgba(31, 26, 23, 0.18);
@@ -27,7 +29,9 @@ body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   color: var(--ink);
-  background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.7), transparent 55%),
+    linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 45%, var(--bg-3) 100%);
   line-height: 1.7;
   min-height: 100vh;
   text-rendering: optimizeLegibility;
@@ -110,7 +114,7 @@ img {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.78);
   border-bottom: 1px solid rgba(31, 26, 23, 0.14);
   box-shadow: 0 12px 24px rgba(31, 26, 23, 0.1);
 }
@@ -184,7 +188,7 @@ h4 {
 .hero {
   padding: 2.8rem;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 245, 230, 0.78));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(225, 242, 255, 0.86));
   border: 1px solid var(--stroke-strong);
   box-shadow: var(--shadow);
   margin-bottom: 3.5rem;
@@ -250,7 +254,7 @@ h4 {
   gap: 0.45rem;
   padding: 0.65rem 1.4rem;
   border-radius: var(--radius-pill);
-  background: linear-gradient(135deg, var(--accent-neo), #1c6b7e);
+  background: linear-gradient(135deg, var(--accent-neo), var(--accent-neo-dark));
   color: #f5fbff;
   text-decoration: none;
   font-weight: 600;
@@ -258,12 +262,13 @@ h4 {
   letter-spacing: 0.18em;
   font-size: 0.78rem;
   box-shadow: 0 12px 24px rgba(47, 126, 160, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .button:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 30px rgba(47, 126, 160, 0.35);
+  filter: brightness(1.02);
 }
 
 .button.ghost {
@@ -490,7 +495,7 @@ section {
 
 .items-list {
   display: grid;
-  gap: 1.4rem;
+  gap: 1.6rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   list-style: none;
   padding: 0;
@@ -503,7 +508,7 @@ section {
   color: inherit;
   padding: 1.25rem 1.35rem;
   border-radius: var(--radius-md);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 245, 230, 0.84));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(232, 244, 255, 0.86));
   border: 1px solid var(--stroke-strong);
   box-shadow: 0 12px 26px rgba(31, 26, 23, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -685,18 +690,41 @@ footer {
 
 @media (prefers-reduced-motion: no-preference) {
   .hero,
-  .item {
+  .item,
+  .research-header,
+  .research-block,
+  .research-figure {
     animation: fade-in 0.7s ease both;
+  }
+
+  .hero::before {
+    animation: float-slow 6s ease-in-out infinite;
+  }
+
+  .hero-card {
+    animation: float-slow 7s ease-in-out infinite;
   }
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(14px) scale(0.99);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
     transform: translateY(0);
   }
 }

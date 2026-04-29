@@ -10,18 +10,34 @@
     <link rel="stylesheet" href="../styles/site.css">
   </head>
   <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title"><a href="../index.html">DH101</a></h1>
-        <p class="tagline">Critical Making this Semester</p>
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
       </div>
     </header>
-    <main class="container site-main">
+    <main class="container site-main" id="main-content">
       <textarea id="md-source" style="display:none"># Accessibility
 
-Explain how you considered accessibility in your work.
-</textarea>
-      <div id="content"></div>
+    Accessibility improvement
+    This site was built by Yugen Somiya for DH 101. I have tried to make it accessible by focusing on structure, text, color, and navigation.
+
+    On this page, I have implemented several improvements to enhance accessibility: I have increased the color contrast of the background to make the text easier to read; I have enlarged the font size; and we have added supplementary explanatory text. Furthermore, to ensure that users can return to the Home page from any other page, we have added a "Click here to return Home" link: [Click here to return Home](../index.html).
+
+    Accessibility Improvement. I improved the HTML structure by using proper semantic elements like section, article, and nav so screen readers can understand the page structure. I added meaningful alt text for informative images and used empty alt text for decorative ones so visually impaired users can understand image content without extra noise. I increased color contrast to meet WCAG guidelines for readability in low-vision and low-light contexts. I ensured keyboard accessibility by making interactive elements reachable by the Tab key and adding visible focus indicators with CSS. I replaced vague link text with descriptive wording so screen reader users can navigate links effectively. I improved text readability by breaking long paragraphs into shorter ones, using clear sentence structure, and keeping line spacing comfortable.
+
+    If you encounter barriers, please contact me at somiya_y1@denison.edu.
+    </textarea>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
+      <p><a href="../index.html">Back to DH101 home</a></p>
     </main>
     <footer>
       <p>&copy; 2026 DH101 Critical Making</p>
@@ -29,7 +45,12 @@ Explain how you considered accessibility in your work.
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdSource = document.getElementById("md-source").value;
-      document.getElementById("content").innerHTML = marked.parse(mdSource);
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
     </script>
   </body>
 </html>
