@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make 7: Networks of Knowledge & Power
+# Make7: The World Is Connected: Visualizing the Supply Chain of the AI Industry
 
 ## Network Analysis (300 words)
 The central nodes in this diagram are ASML, TSMC, and NVIDIA. ASML, based in the Netherlands, is the world's largest manufacturer of semiconductor lithography equipment. ASML is the only company capable of producing state-of-the-art extreme ultraviolet (EUV) lithography systems. This technology is indispensable for fabricating high-performance semiconductors used in AI, smartphones, and automobiles. ASML commands a near-monopoly on this market. Semiconductor companies worldwide rely on ASML's lithography systems for manufacturing; consequently, every pathway in the supply chain passes through ASML. TSMC is the world's largest semiconductor contract manufacturer. It operates on a specialized foundry model, producing chips based on designs commissioned by other firms, such as Apple and NVIDIA. Rather than marketing its own branded products, TSMC is a corporate titan indispensable to modern industry. It holds a 90% global market share in cutting-edge 5nm and 3nm process technologies. Numerous AI companies commission TSMC to manufacture their semiconductors, positioning the company at the center of the supply chain. NVIDIA utilizes the semiconductors fabricated by TSMC to create AI chips. Headquartered in the United States, NVIDIA is one of the world's largest semiconductor manufacturers and holds a dominant market share in GPUs designed for AI and data center applications. AI firms such as OpenAI and Anthropic rely on NVIDIA's chips to power their operations.

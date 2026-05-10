@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make 10. AI & Labor
+# Make10: Invisible Workers
 
 ## Research Notes (300 words)
 

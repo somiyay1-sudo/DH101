@@ -2,7 +2,19 @@
 layout: default
 ---
 
-# Make 9. Games and Play
+# Make9: Let's play game! Let's think about LWAS? Wait, what is LAWS?
+
+## Play Game
+
+<iframe
+	src="play-game/AI_game.html"
+	width="100%"
+	height="700"
+	style="border: none;"
+	title="Twine Game"
+></iframe>
+
+[Open the game in a new tab](play-game/AI_game.html)
 
 ## Deliverables
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make 1: Reverse-engineer a DH/AI project
+# Make1: Reverse-engineering
 
 ## Project Chosen
 Photogrammar

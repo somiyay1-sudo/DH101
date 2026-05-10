@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Week 7  EMapping AI Worlds
+# Make6: Strategy of AI's infrastructures, digital map for data center
 
 ## The Artifact
 Describe or embed your artifact here.

@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Week 6 EText & Distant Reading
+# Make5: Voyant vs ChatGPT text analysis
 
-## Make 5. Compare Voyant vs GPT text analysis
+## Voyant vs ChatGPT text analysis
 Student Name: Yugen Somiya.
 
 ## Text Analyzed

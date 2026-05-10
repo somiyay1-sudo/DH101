@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make 12: Futures of AI & Humanity
+# Make12: Museum of 2076
 
 ## Context Statement (300 words)
 

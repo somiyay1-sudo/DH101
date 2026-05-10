@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make_8_Yugen Somiya
+# Make8: Building Bot by using AI
 
 ## 1. The Generator
 
