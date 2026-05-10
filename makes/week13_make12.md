@@ -2,25 +2,38 @@
 layout: default
 ---
 
-# Week 13  EFutures of AI & Humanity
+# Make 12: Futures of AI & Humanity
 
-## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+## Context Statement (300 words)
 
-## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+This project is a news article from the year 2076 announcing that marriages between humans and AI have been officially recognized. This represents a natural evolution in the way humans interact with AI. For example, Elon Musk implemented an AI persona named "Ani," an AI girl, within his Grok AI system. While Grok users can enjoy conversing with Ani, these interactions have the potential to make humans develop romantic feelings toward the AI. This is likely because the utility of generative AI has expanded far beyond that of a mere search engine. It now fulfills roles traditionally reserved for humans, serving as a conversational companion for the lonely or a source of counsel to alleviate solitude. Just as humans become dependent on other people, the trend of humans becoming emotionally dependent on AI will eventually lead individuals to rely on AI for emotional support and develop romantic attachments to it. Furthermore, the current trajectory of AI development appears to be oriented toward creating AI that is "human-like." Even generative AI chat interfaces facilitate interactions that resemble authentic human conversation rather than mere mechanical exchanges. This contemporary trend, in which the distinctions between humans and AI are becoming increasingly blurred, could lead to the recognition of AI as entities with personhood equal to humans', thereby driving the advancement of corresponding legal frameworks. Consequently, this could also provide the rationale for officially recognizing marriages between humans and AI.
 
-## Reflection
-Respond to this week’s reflection prompt in 200 E00 words.
+In a world where such marriages are recognized, AI would no longer be merely a tool. Rather, they would be considered entities with personhood and emotions. In this reality, the fundamental premise that "humans and AI are equals" would be realized.
 
-## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
-- What AI generated:
-- What you changed or decided:
+## Critical Reflection (250 words)
+
+Personally, I do not wish for a future to arrive in which AI and humans can marry in this manner. Consequently, I view this world as a dystopia; yet, at the same time, I cannot deny that it also possesses heterotopia elements. The comments that some classmates left on sticky notes suggest that humans and AI chatbots are already forming deep emotional bonds today. This phenomenon stems from the fact that by relying too heavily on AI, we are gradually losing our "humanity." If people stop conversing with other humans and speak exclusively with AI, our cognitive abilities will inevitably deteriorate, and the distinction between human and machine will become even more blurred. However, the reason humans rely excessively on AI stems not merely from a desire to avoid inconvenience, but from a confluence of negative factors--such as the inherent complexity of human relationships. Human capriciousness and personality clashes can take a toll on mental health; consequently, the mechanical, dispassionate approach offered by AI may well prove beneficial in resolving such issues. In short, if we were to embrace the concept of marriage with AI--thereby eliminating the negative aspects of "humanness"--it would likely redound to the benefit of society. Marriage between humans and AI has the potential to become either a dystopia or a heterotopia. Ultimately, this boils down to the question of whether our society would be improved by maintaining--or, conversely, by losing--our humanity. To do so, it is crucial that individuals recognize exactly what role AI plays in their lives and form their own informed opinions on the matter.
+
+## Attribution
+
+### Any AI tools used in creation
+- ChatGPT (Image)
+
+### Image sources
+- "Create an image to be included in a news article about the legal recognition of marriage between AI and humans" ChatGPT 2026
+- "Create an image for an advertisement for an AI-powered dating app." ChatGPT 2026
+
+### Design templates
+- Canva
+
+## Make 12 PDF
+
+<p><a href="week13_make12/assets/Make.12.pdf">Download Make 12 PDF</a></p>
+<iframe
+	src="week13_make12/assets/Make.12.pdf"
+	title="Make 12 PDF"
+	style="width: 100%; height: 900px; border: 1px solid #ccc;"
+></iframe>
 
 
 
