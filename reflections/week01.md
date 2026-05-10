@@ -4,7 +4,7 @@ layout: default
 
 # Week 1 Reflection
 
-## What counts as "making" in the age of AI?
+## Reflect 1: What counts as "making" in the age of AI? What might be gained/lost when machines participate in making?
 
 In the age of AI, **"making" means connecting data and people.** Relying on machines allows people to access large-scale data and digital archives. This exposure to new information and environments can stimulate creativity.
 

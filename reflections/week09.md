@@ -6,7 +6,7 @@ layout: default
 
 # Week 9 Reflection
 
-Reflect 9: What is creativity when AI can generate endlessly? Where is the human in generative work?
+## Reflect 9: What is creativity when AI can generate endlessly? Where is the human in generative work? What was your experience building the bot? Were you in control of the output?
 
 
 

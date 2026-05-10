@@ -6,7 +6,7 @@ layout: default
 
 # Week 2 Reflection
 
-## Can AI help us define what it means to be human, or does it reduce us to patterns?
+## Reflect 2: Can AI help us define what it means to be human, or does it reduce us to patterns?
 
 **AI reduces us to patterns.** People are losing their individuality and becoming "standardized" by AI. AI utilizes enormous data to create output; however, the data is usually biased depending on the amount of data on language or nations.
 
