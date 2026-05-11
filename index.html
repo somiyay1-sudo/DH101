@@ -294,25 +294,9 @@
         </div>
         <p>&copy; 2026 DH101 Critical Making</p>
     </footer>
-    <script>
-        document.querySelectorAll(".alt-toggle").forEach((button) => {
-            button.addEventListener("click", () => {
-                const targetId = button.getAttribute("aria-controls");
-                const target = targetId ? document.getElementById(targetId) : null;
-                if (!target) {
-                    return;
-                }
-                const isExpanded = button.getAttribute("aria-expanded") === "true";
-                button.setAttribute("aria-expanded", (!isExpanded).toString());
-                if (isExpanded) {
-                    target.setAttribute("hidden", "");
-                } else {
-                    target.removeAttribute("hidden");
-                }
-            });
-        });
-    </script>
+    <script src="scripts/alt-toggle.js" defer></script>
 </body>
 </html>
+
 
 
