@@ -1371,3 +1371,116 @@ footer {
     padding: 2rem 1.6rem;
   }
 }
+
+@media (max-width: 600px) {
+  .site-header .header-grid {
+    padding: 1.4rem 1.2rem 1.1rem;
+  }
+
+  .site-title {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+    letter-spacing: 0.12em;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+  }
+
+  .site-nav {
+    gap: 0.5rem;
+  }
+
+  .site-nav a {
+    font-size: 0.75rem;
+    padding: 0.45rem 0.9rem;
+    letter-spacing: 0.12em;
+  }
+
+  .site-home .section,
+  .hero-stage {
+    padding: 1.6rem;
+  }
+
+  .hero-grid {
+    gap: 1.6rem;
+  }
+
+  .hero-copy h1,
+  .hero-copy h2 {
+    font-size: clamp(1.6rem, 5.4vw, 2.4rem);
+  }
+
+  .hero-lede {
+    font-size: 0.98rem;
+  }
+
+  .hero-ticker {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+  }
+
+  .poster-card .poster-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+  }
+
+  .poster-kicker {
+    letter-spacing: 0.2em;
+  }
+
+  .poster-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .update-item {
+    padding: 0.9rem;
+  }
+
+  .update-tag {
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+  }
+
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+  }
+
+  .section-head h2 {
+    letter-spacing: 0.12em;
+  }
+
+  .items-list {
+    grid-template-columns: 1fr;
+  }
+
+  .research-header {
+    padding: 1.1rem 1.2rem;
+  }
+
+  .research-figure img {
+    width: 100%;
+  }
+
+  body:not(.site-home) p,
+  body:not(.site-home) li {
+    font-size: 1rem;
+  }
+
+  body:not(.site-home) p {
+    text-indent: 0;
+  }
+
+  body:not(.site-home) h1 {
+    letter-spacing: 0.1em;
+  }
+
+  body:not(.site-home) h2 {
+    letter-spacing: 0.12em;
+  }
+
+  body:not(.site-home) h3 {
+    letter-spacing: 0.1em;
+  }
+}
