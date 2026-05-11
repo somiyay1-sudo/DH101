@@ -1086,6 +1086,19 @@ body:not(.site-home) blockquote {
   background: rgba(93, 225, 255, 0.08);
 }
 
+body:not(.site-home) blockquote.ai-quote {
+  border-left-color: var(--accent-3);
+  background: rgba(247, 201, 72, 0.12);
+}
+
+body:not(.site-home) blockquote.ai-quote p {
+  margin: 0 0 0.85rem;
+}
+
+body:not(.site-home) blockquote.ai-quote p:last-child {
+  margin-bottom: 0;
+}
+
 .resume-page .site-main {
   max-width: 860px;
 }

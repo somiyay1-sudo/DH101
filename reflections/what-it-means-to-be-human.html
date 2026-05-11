@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What it means to be human in the age of AI?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="../styles/site.css">
+  </head>
+  <body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-grid">
+        <div class="site-brand">
+          <p class="site-title"><a href="../index.html">DH101</a></p>
+          <p class="tagline">Critical Making this Semester</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#makes">Makes</a>
+          <a href="../index.html#reflections">Reflections</a>
+          <a href="../index.html#pages">Pages</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container site-main" id="main-content">
+      <textarea id="md-source" style="display:none"># What it means to be human in the age of AI?
+
+In the age of AI, being human means having a unique identity. This is because we humans formulate our "ideas" based on our own "experiences," and these, in turn, shape the concepts and identity of our work. In his book "Critical Making," Matt Ratto states, "The ultimate goal of critical making experiences is not the evocative or pedagogical object intended to be experienced by others, but rather the creation of novel understandings by the makers themselves." In order to "create novel understandings" you cannot rely on AI. Certainly, if your sole aim is to create something that influences others -- or simply to provide instruction -- then human involvement may be unnecessary, and the entire task could perhaps be entrusted to AI. However, for "you" to be truly convinced, you must invest the effort yourself. Unless you understand yourself, you cannot engage in "critical making" -- nor can you simply offload the task of self-understanding onto AI. It is only when you discover your own unique interpretations and craft your own original forms of self-expression that your *own* critical making -- distinct from that of AI -- is truly complete.
+
+Through this course, I gained significant insight into AI's influence on RIMIX culture and its broader societal impact, etc. Initially, I believed that AI was incapable of making judgments. However, I have since realized that AI can make many rational decisions. Yet, I also recognized that AI cannot manifest the same degree of diverse identities as humans. AI can offer perspectives from various angles and generate responses tailored to individual needs. However, these are nothing more than an AI selecting the "appropriate" answers from big data. In "Anatomy of an AI System", Kate Crawford and Vladan Joler characterize AI as a system of "extractivism" -- one in which data is extracted and digitized from human beings, encompassing even their emotions and behaviors. Consequently, they suggest that AI not only reproduces prejudices -- such as gender bias, racial bias, and stereotypes -- but also embodies structural parallels to colonialist resource exploitation. By reducing human beings to data, there is a risk that not only will biases emerge in AI-generated responses, but human emotions themselves will be generalized. If this becomes the case, humans may cease to be human at all. Moreover, I did not perceive the same richness of diverse backgrounds in AI as one senses in human beings.
+
+According to the concept of "data feminism" by Catherine D'Ignazio and Lauren Klein, AI is biased based on their program and machine learning. If humans cease to think critically and become 100% dependent on AI, the biases inherent in that AI will overwrite your very identity. That is precisely why -- as human beings -- we must express our own identities and resist this "data feminism." For when humans judge, edit, and infuse AI-generated outputs with their own originality, they ensure that the resulting work remains uncorrupted by AI biases, thereby safeguarding its diversity. It is precisely because each of us possesses unique thoughts and experiences that we are able to hold such a diverse array of, at times, "biased" opinions. This was evident in Week 13; when we created our artifacts, each of us produced a work that was entirely distinct from the others. Had we all simply delegated the entire creation process to AI, the resulting works would likely have all fallen into similar patterns.
+
+In conclusion, to live in an era of advancing AI is, fundamentally, to express one's own originality and identity.
+      </textarea>
+      <div id="content" role="article" aria-labelledby="page-title"></div>
+      <div class="back-home"><a class="button ghost compact" href="../index.html">Go back home</a></div>
+    </main>
+    <footer>
+      <p>&copy; 2026 DH101 Critical Making</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      const mdSource = document.getElementById("md-source").value;
+      const content = document.getElementById("content");
+      content.innerHTML = marked.parse(mdSource);
+      const pageTitle = content.querySelector("h1");
+      if (pageTitle && !pageTitle.id) {
+        pageTitle.id = "page-title";
+      }
+    </script>
+    <script src="../scripts/alt-toggle.js" defer></script>
+</body>
+</html>

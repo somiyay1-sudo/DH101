@@ -35,49 +35,113 @@
     <main class="container site-main">
       <textarea id="md-source" style="display:none"># How I Use AI
 
-## What AI tools you used
+    ## What AI tools you used
 
-In the creation of my "Makes," I use both ChatGPT and Perplexity. I use ChatGPT for brainstorming ideas, generating text, and structuring content, while I use Perplexity for research purposes, specifically for sourcing information and gathering news.
+    In the creation of my "Makes," I use ChatGPT, Gemini, and Perplexity. I use ChatGPT for brainstorming ideas, generating text, and structuring content, while I use Perplexity for research purposes, specifically for sourcing information and gathering news. In addition, if image output is required in Makes, we use ChatGPT to generate the images.
 
-## Specific prompts/tasks
+    ## Specific prompts/tasks
 
-The nature of AI tasks varies depending on the project. When creating images or GIFs, I rely on AI to handle a substantial portion of the work. Since AI can generate code quickly and accurately, and strict originality is often less critical in this context, I also use AI assistance for programming tasks.
+    The nature of AI tasks varies depending on the project. When creating images or GIFs, I rely on AI to handle a substantial portion of the work. Since AI can generate code quickly and accurately, and strict originality is often less critical in this context, I also use AI assistance for programming tasks.
 
-In the creation of the game featured in this project, for instance, I generated the necessary code using prompts such as:
+    ## Case 1: Make11_Enviromental Issues on AI Data Centers
 
-- Generate Twine code for a story about...
+    While researching the environmental impact of AI data centers, I asked ChatGPT to search for relevant materials using the following prompt.
 
-I also frequently use AI for research and gathering information. In this specific instance, I employed prompts such as:
+    Prompt: "How much water does a data center consume during operation?"
 
-- What are the ongoing debates regarding accountability and ethics surrounding LAWS?
-- Tell me about real-world scenarios where AI is used in warfare.
-- How does one go about coding in Twine?
-- How do you create branching paths?
-- Write a description that portrays a combat scene involving an AI drone with greater realism.
+    The output of the ChatGPT is below.
 
-When using Perplexity, the output is accompanied by source citations, so I verify these sources. This practice is essential because AI models can hallucinate, generating incorrect or fabricated responses. However, searching with AI is more efficient than using Google, allowing me to reach relevant information sources more quickly. This is particularly convenient for students like me for whom English is not a first language.
+    **AI output**
+    <blockquote class="ai-quote">
+    <p>Data centers are highly water-intensive facilities, primarily due to the cooling requirements of servers. On average, a typical large data center can consume between 360,000 to 400,000 gallons of water per day, which adds up to roughly 130 million gallons annually. Hyperscale data centers, like those operated by major tech companies, can use even more, sometimes exceeding 1 million gallons per day, especially in hot climates or during peak computing loads.</p>
+    <p>Most of this water is used in evaporative cooling towers, which rely on water evaporation to remove heat from air circulating around servers. For example, a cooling tower may evaporate 0.5 to 1 gallon of water per kilowatt-hour of electricity used by IT equipment. Some water is also used for humidification and equipment maintenance, but these account for a smaller fraction.</p>
+    <p>Water usage effectiveness (WUE) is a standard metric, measuring the liters of water used per kilowatt-hour of IT energy. A typical WUE for a conventional data center ranges from 1 to 1.8 liters per kWh, whereas more water-efficient facilities aim for less than 0.5 liters per kWh using recycled water or closed-loop cooling systems.</p>
+    <p>As cloud computing and AI workloads expand, water demand grows, making sustainable solutions like recycled water, air cooling, and liquid immersion cooling critical for reducing environmental impact while maintaining operational efficiency.</p>
+    </blockquote>
 
-## What you kept vs. changed
+    While this AI-generated response is sophisticated, it cannot be used directly for an infographic. This is because it lacks visual clarity and is difficult for a human audience to readily grasp.
 
-Regarding AI use, my strategy is to use AI to complement my areas of weakness while preserving my own core strengths as a source of originality. Since I am not particularly skilled at coding or drawing, I rely heavily on AI to handle tasks such as creating comics and managing the coding style for games. As a result, I rarely make significant changes to the formatting of images and code. However, the text output often undergoes substantial revision.
+    AI responses are rich in knowledge and well-suited for conveying general trends. Therefore, I conduct additional research based on the information generated by the AI.
 
-I refine the AI output by rewriting logical prose and organizing ideas, because I enjoy and excel at these tasks. Since the AI output sometimes includes English that I do not fully understand, I rewrite it in language that makes sense to me. And because AI output often does not align with my intentions, I treat it as a source of ideas; most of the final text is constructed from my own original concepts.
+    When I asked Perplexity to provide sources for both primary and secondary data regarding water usage in data centers, it suggested academic papers and newspaper articles such as the following:
 
-Kept:
+    - Lei, Nuoa, et al. "The Water Use of Data Center Workloads: A Review and Assessment of Key Determinants." Resources, Conservation and Recycling, vol. 219, June 2025, p. 108310, https://doi.org/10.1016/j.resconrec.2025.108310.
+    - Lei, Nuoa, and Eric Masanet. "Climate- and Technology-Specific PUE and WUE Estimations for U.S. Data Centers Using a Hybrid Statistical and Thermodynamics-Based Approach." Resources, Conservation and Recycling, vol. 182, July 2022, p. 106323, https://doi.org/10.1016/j.resconrec.2022.106323.
+    - Mytton, David. "Data Centre Water Consumption." Npj Clean Water, vol. 4, no. 1, 15 Feb. 2021, www.nature.com/articles/s41545-021-00101-w, https://doi.org/10.1038/s41545-021-00101-w.
+    - "Data Centers and Water Use in Pennsylvania." Psu.edu, 2025, extension.psu.edu/data-centers-and-water-use-in-pennsylvania.
 
-- Format of code
-- Flow of the text
-- Structure
+    Based on this information, I created a graph comparing the water consumption of data centers with that of other industries.
 
-Changed:
+    ### Graph of water Use
 
-- Text (changed to easier language)
-- Idea of AI
+    ![A graph showing that data centers consume the same amount of water as food processing plants.](../graph.png)
 
-## Your policy on AI use
+    ### What you kept vs. changed
 
-"AI is, first and foremost, a tool; it is humans who possess the capacity for true originality." This principle is the foundation of my AI policy. Fundamentally, I view AI as an assistive device, and I make it a rule to conceive the initial drafts and core concepts myself. I follow this approach because I often find AI generated ideas unappealing and I can formulate my own ideas much faster. Furthermore, the decision of how to use AI output, or whether to use it at all, must ultimately rest with me. In other words, it is crucial that I retain the authority to make the final judgment regarding my work.
-</textarea>
+    In this context, while I sought to fundamentally alter the explanation regarding AI, I drew upon the AI's output for guidance on the manner of presentation and the source material. In other words, although I made substantial revisions to the actual content of the explanation concerning water consumption in data centers, I largely retained the AI's output regarding the structural organization of the explanation within the infographic and the underlying sources. This approach was adopted because, while the AI's raw output was not directly suitable for immediate use in an infographic, the flow of the explanatory text itself was well-refined and served as a valuable reference. In addition, since numerical data generated by AI often stems from misinterpretations, I personally verified the actual sources and utilized only accurate values in my explanations.
+
+    Kept:
+
+    - Flow of the text
+    - Structure of the explanation
+
+    Changed:
+
+    - Text (changed to easier language)
+    - The numerical data (made more accurate)
+
+    ### Final Product
+
+    "For instance, in the vicinity of New Albany, the simultaneous expansion of data centers, alongside the construction of an Intel semiconductor plant and a growing population, has triggered a rapid surge in demand for limited water resources. Google's data center in the area, for example, consumes 4.2 million liters of water daily, an amount equivalent to the water usage of an entire manufacturing plant. Furthermore, the issue extends beyond mere volume; because water demand is heavily influenced by ambient temperature, usage spikes sharply during the summer months, thereby straining peak water-supply capacity."
+
+    ## Case 2: Make9_Making Game
+
+    In the creation of the game featured in this project, for instance, I generated the necessary code using prompts such as:
+
+    - Generate Twine code for a story about...
+
+    I also frequently use AI for research and gathering information. When using Perplexity, the output is accompanied by source citations, so I verify these sources. This practice is essential because AI models can hallucinate, generating incorrect or fabricated responses. However, searching with AI is more efficient than using Google, allowing me to reach relevant information sources more quickly. This is particularly convenient for students like me for whom English is not a first language.
+
+    In this specific instance, I employed prompts such as:
+
+    - What are the ongoing debates regarding accountability and ethics surrounding LAWS?
+    - Tell me about real-world scenarios where AI is used in warfare.
+    - How does one go about coding in Twine?
+    - How do you create branching paths?
+
+    I use this prompt to describe my AI use.
+
+    Prompt: "Write a description that portrays a combat scene involving an AI drone with greater realism."
+
+    **AI output**
+    <blockquote class="ai-quote">
+    <p>A gray sky hangs over the battlefield, debris from crumbling buildings swirling in the wind. Through the haze and smoke, an AI drone emerges, sensors glinting with cold precision. Its rotors adjust subtly, scanning the terrain for movement. Far off, enemy figures stir, and the drone calculates the perfect trajectory, compensating for wind and distance. Explosions ripple through the rubble, shaking the ground, but the drone hovers unflinchingly, relentless and precise. The air is thick with tension, every second a test of reflexes. Something deadly is coming, and the first strike will decide who survives.</p>
+    </blockquote>
+
+    While this text certainly enhances the sense of immersion in the combat, it is overly abstract. AI-generated responses often consist of vague, abstract content, shying away from the use of specific proper nouns. Drawing upon the AI's word choices and the situational context it established, I have rewritten the passage to provide a more detailed and specific description.
+
+    ### What you kept vs. changed
+
+    Regarding AI use, my strategy is to use AI to complement my areas of weakness while preserving my own core strengths as a source of originality. Since I am not particularly skilled at coding or drawing, I rely heavily on AI to handle tasks such as creating comics and managing the coding style for games. As a result, I rarely make significant changes to the formatting of images and code. However, the text output often undergoes substantial revision.
+
+    I refine the AI output by rewriting logical prose and organizing ideas, because I enjoy and excel at these tasks. Since the AI output sometimes includes English that I do not fully understand, I rewrite it in language that makes sense to me. And because AI output often does not align with my intentions, I treat it as a source of ideas; most of the final text is constructed from my own original concepts.
+
+    ### Final Product
+
+    "You are the commanding officer of a U.S. Army experimental unit, Task Force Aegis-7, deployed to a contested border region in Eastern Europe amid escalating tensions with Russian forces. Your unit operates at the edge of modern warfare doctrine, integrating an advanced autonomous drone system designed to support reconnaissance, electronic warfare, and precision strikes. The system, call sign "Sentinel," can independently identify targets, classify threats, and, under predefined rules of engagement, carry out lethal actions without immediate human input."
+
+    ## My policy on AI use
+
+    "AI is, first and foremost, a tool. Humans possess the capacity for true originality." This principle forms the basis of my AI policy. I fundamentally view AI as an assistive device, so I make it a rule to conceive the initial drafts and core concepts myself. I consider the limitations and ethical implications of AI rather than treating the technology as neutral or objective.
+
+    In her critique of large language models, Emily M. Bender argues that these systems merely reproduce statistical patterns in language. Her work acknowledges that AI-generated outputs do not represent genuine understanding or lived experience. I take this approach because I often find AI-generated ideas uninspiring, and I can formulate my own ideas much faster. In other words, generated descriptions may sound emotionally convincing while still flattening historical and human complexity. This tension is part of the project's argument, not an accidental flaw.
+
+    Therefore, the decision of how to use AI output, or whether to use it at all, must ultimately rest with me. In other words, it is crucial that I retain the authority to make the final judgment regarding my work.
+
+    Furthermore, it is impermissible to rely 100% on AI. AI is inherently biased, so becoming overly dependent on its outputs risks eroding one's identity. This idea is based on the concept of "data feminism" by Catherine D'Ignazio and Lauren Klein, particularly the notion that data systems reflect existing power relations. AI models are trained using archives that are shaped by geopolitical inequality, dominant languages, and platform capitalism. For example, much of the information used to generate AI outputs consists of English-language literature. Even when I used AI, the majority of the source material was in English, and Japanese or Russian literature was rarely used. As users, we must recognize this type of bias and adapt accordingly.
+
+    Lastly, we must acknowledge that this work reflects Kate Crawford's argument that AI systems depend on extractive infrastructures, including human labor, resource consumption, and massive datasets gathered without meaningful consent. Although the game uses AI as a creative tool, it acknowledges that these tools are built on unequal global systems of labor and data extraction. This complicates the concept of AI-assisted creativity, raising questions about authorship, accountability, and ownership. When using AI, we must understand the issues inherent in its use. If we use AI without this understanding, we risk becoming mere automatons, robots that do nothing more than copy and paste the AI's erroneous responses. It is essential that we understand the underlying context of AI, correctly interpret its output, and make necessary adjustments. To do so, we must first acknowledge critical issues associated with AI, such as wasteful resource consumption and reliance on exploitative infrastructure, and then use the technology sustainably.
+    </textarea>
       <div id="content"></div>
       <div class="back-home"><a class="button ghost compact" href="../index.html">Go back home</a></div>
     </main>
