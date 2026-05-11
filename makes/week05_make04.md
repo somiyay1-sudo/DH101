@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make4: How will the AI evolve GIFs and remixes?
+# How will the AI evolve GIFs and remixes?
 
 ## The Artifact
 ![Week 5 artifact GIF - alt text: Animated GIF of the Week 5 remix culture artifact](week05_make04/assets/gif_for_class.gif)

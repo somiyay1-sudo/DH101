@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make5: Voyant vs ChatGPT text analysis
+# Voyant vs ChatGPT text analysis
 
 ## Voyant vs ChatGPT text analysis
 Student Name: Yugen Somiya.

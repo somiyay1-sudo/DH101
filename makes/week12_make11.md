@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make11: Will AI Destroy the Environment?
+# Will AI Destroy the Environment?
 
 ## Research Documentation (300 words)
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make8: Building Bot by using AI
+# Building Bot by using AI
 
 ## 1. The Generator
 

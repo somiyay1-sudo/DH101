@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make9: Let's play game! Let's think about LWAS? Wait, what is LAWS?
+# Let's play game! Let's think about LWAS? Wait, what is LAWS?
 
 ## Play Game
 

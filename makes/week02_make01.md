@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make2: Can AI Make You Look Better and More Beautiful?
+# Can AI Make You Look Better and More Beautiful?
 
 ## AI Name: Canva
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make12: Museum of 2076
+# Museum of 2076
 
 ## Context Statement (300 words)
 

@@ -8,7 +8,7 @@ layout: default
 
 ## Reflect 13: Do we imagine AI futures as utopian, dystopian, or something in between? What do those visions reveal about us?
 
-In the age of AI, being human means having a unique identity. Through this course, I gained significant insight into AI's influence on RIMIX culture and its broader societal impact. Initially, I believed that AI was incapable of making judgments. However, I have since realized that AI can make many rational decisions. Yet, I also recognized that AI cannot manifest the same degree of diverse identities as humans. AI can offer perspectives from various angles and generate responses tailored to individual needs. However, these are nothing more than an AI selecting the "appropriate" answers from big data. Moreover, I did not perceive the same richness of diverse backgrounds in AI as one senses in human beings. In the age of AI, it is crucial that we express our individuality while maintaining our unique identities.
+I believe the future brought about by AI will be dystopian. In my opinion, people are gradually losing their "humanity" because they rely too heavily on AI. If people stop conversing with each other and only communicate with AI, our cognitive abilities will inevitably deteriorate, and the distinction between human and machine will become blurred. In such a world, we would lack the capacity for critical thinking, and humani itself might become merely a tool for AI. As a result of AI's advanced capabilities, our sense of "selfhood" seems poised to vanish entirely. Therefore, rather than engaging in ever-increasing dialogue with AI, people should prioritize communicating with friends, professors, and others, thereby reducing their dependence on AI chatbots.
 
 
 

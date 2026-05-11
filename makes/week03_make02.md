@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make3: You can write a comic even if you aren't good at drawing.
+# You can write a comic even if you aren't good at drawing.
 
 ![AI comic panels - alt text: Six-panel AI comic of a cat and its owner reuniting and traveling together](week03_make02/assets/名称未設定のデザイン.png)
 

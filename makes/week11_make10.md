@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make10: Invisible Workers
+# Invisible Workers
 
 ## Research Notes (300 words)
 

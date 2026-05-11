@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Make1: Reverse-engineering
+# Reverse-engineering
 
 ## Project Chosen
 Photogrammar
