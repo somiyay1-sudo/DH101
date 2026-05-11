@@ -13,7 +13,7 @@ What tools did you use?
 What decisions did you make?
 
 ## Reflection
-Respond to this week’s reflection prompt in 200 E00 words.
+Respond to this week's reflection prompt in 200-300 words.
 
 ## Attribution & AI Use
 - Tools used:
