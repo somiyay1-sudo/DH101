@@ -167,7 +167,7 @@ img {
 
 .header-link {
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.22em;
   padding: 0.45rem 1rem;
@@ -207,7 +207,7 @@ h4 {
 
 .tagline {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -216,7 +216,7 @@ h4 {
 
 .brand-kicker {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.4em;
   color: var(--accent-2);
@@ -232,7 +232,7 @@ h4 {
 
 .site-nav a {
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   padding: 0.6rem 1.4rem;
   border-radius: var(--radius-pill);
@@ -328,7 +328,7 @@ h4 {
 }
 
 .eyebrow {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.36em;
   color: var(--accent-2);
@@ -343,6 +343,7 @@ h4 {
   border-radius: 999px;
 }
 
+.hero-copy h1,
 .hero-copy h2 {
   font-size: clamp(2rem, 3.2vw + 0.8rem, 3.2rem);
   margin-bottom: 1rem;
@@ -393,7 +394,7 @@ h4 {
 
 .poster-kicker {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--accent-3);
@@ -435,7 +436,7 @@ h4 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
 }
 
 .poster-stats .value {
@@ -470,7 +471,7 @@ h4 {
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.26em;
-  font-size: 0.68rem;
+  font-size: 0.85rem;
   margin-bottom: 1.2rem;
   position: relative;
   z-index: 1;
@@ -528,7 +529,7 @@ h4 {
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.32em;
-  font-size: 0.66rem;
+  font-size: 0.85rem;
   color: rgba(244, 246, 251, 0.6);
   white-space: nowrap;
   overflow: hidden;
@@ -553,7 +554,7 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   box-shadow: 0 16px 30px rgba(255, 59, 95, 0.28);
   transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
@@ -692,7 +693,7 @@ h4 {
 
 .button.compact {
   padding: 0.5rem 1.1rem;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   letter-spacing: 0.18em;
   box-shadow: none;
 }
@@ -748,7 +749,7 @@ h4 {
 }
 
 .research-figure figcaption {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--muted);
   text-align: center;
 }
@@ -765,10 +766,41 @@ h4 {
   text-align: left;
 }
 
+.alt-controls {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.alt-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(12, 16, 26, 0.9);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+}
+
+.alt-toggle:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+}
+
+.alt-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .research-reference {
   margin-top: 1.4rem;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--muted);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-top: 0.9rem;
@@ -815,7 +847,7 @@ h4 {
 
 .update-tag {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.24em;
   color: var(--accent-3);
@@ -855,7 +887,7 @@ h4 {
 
 .aside-kicker {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.26em;
   color: var(--accent-2);
@@ -899,7 +931,7 @@ section {
   background: rgba(255, 59, 95, 0.15);
   border: 1px solid rgba(255, 59, 95, 0.4);
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--accent);
@@ -1156,7 +1188,13 @@ footer {
 
 .audio-attribution {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.audio-description {
+  margin: 0;
+  font-size: 0.95rem;
   color: var(--muted);
 }
 

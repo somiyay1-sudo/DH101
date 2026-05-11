@@ -13,7 +13,7 @@
             <div class="hero-grid">
                 <div class="hero-copy">
                     <p class="eyebrow">Update now</p>
-                    <h2 id="hero-title">DH101 field log: mapping AI infrastructures and critical making.</h2>
+                    <h1 id="hero-title">DH101 field log: mapping AI infrastructures and critical making.</h1>
                     <p class="hero-lede">Weekly makes, reflections, and experiments collected as a living archive for the semester.</p>
                     <div class="hero-actions">
                         <a class="button" href="#updates">Latest updates</a>
@@ -81,7 +81,7 @@
                         <p class="aside-kicker">Research spotlight</p>
                         <h3>Trapping Atomic Ions</h3>
                         <p>Quantum networks, laser cooling, and experimental physics notes.</p>
-                        <a class="button ghost compact" href="pages/physics-research.html">Read details</a>
+                        <a class="button ghost compact" href="pages/physics-research.html">View research</a>
                     </div>
                     <div class="aside-card aside-links">
                         <p class="aside-kicker">Quick links</p>
@@ -107,12 +107,16 @@
                     <h3>Trapping Atomic Ions for Quantum Network</h3>
                     <p>Yugen Somiya</p>
                 </div>
-                <a class="button ghost compact" href="pages/physics-research.html">Read details</a>
+                        <a class="button ghost compact" href="pages/physics-research.html">Read physics research</a>
             </div>
             <div class="research-layout">
                 <div class="research-main">
                     <figure class="research-figure feature">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Paul_quadrupole_trap.jpg" alt="Charged flour grains held in a Paul quadrupole ion trap, illuminated by green light.">
+                        <div class="alt-controls">
+                            <button class="alt-toggle" type="button" aria-expanded="false" aria-controls="alt-paul-trap">ALT</button>
+                            <p id="alt-paul-trap" class="alt-text" hidden>Charged flour grains held in a Paul quadrupole ion trap, illuminated by green light.</p>
+                        </div>
                         <figcaption>Photo: Jan Pavelka, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via <a href="https://en.wikipedia.org/wiki/File:Paul_quadrupole_trap.jpg">Wikimedia Commons</a>.</figcaption>
                     </figure>
                     <article class="research-block">
@@ -127,6 +131,10 @@
                 <aside class="research-aside">
                     <figure class="research-figure">
                         <img src="0.png" alt="Energy level diagram of La2+.">
+                        <div class="alt-controls">
+                            <button class="alt-toggle" type="button" aria-expanded="false" aria-controls="alt-la2-diagram">ALT</button>
+                            <p id="alt-la2-diagram" class="alt-text" hidden>Energy level diagram of La2+.</p>
+                        </div>
                         <figcaption>Energy level diagram of La2+.</figcaption>
                     </figure>
                     <article class="research-block">
@@ -277,14 +285,33 @@
 
     <footer>
         <div class="site-audio">
-            <audio autoplay loop controls preload="none">
+            <audio loop controls preload="none" aria-describedby="audio-description" aria-label="Mozart Symphony No. 40 audio">
                 <source src="https://commons.wikimedia.org/wiki/Special:FilePath/Mozart_-_Symphony_No._40_in_G_minor%2C_K550_-_I._Molto_allegro_%28Musopen_Symphony%29.flac" type="audio/flac">
                 Your browser does not support the audio element. You can download the audio file here: <a href="https://commons.wikimedia.org/wiki/File:Mozart_-_Symphony_No._40_in_G_minor%2C_K550_-_I._Molto_allegro_%28Musopen_Symphony%29.flac">Wikimedia Commons</a>.
             </audio>
+            <p id="audio-description" class="audio-description">Audio: instrumental orchestral recording of Mozart's Symphony No. 40, first movement. No spoken content.</p>
             <p class="audio-attribution">Wolfgang Amadeus Mozart, "Symphony No. 40 in G minor, K. 550 - I. Molto allegro" (Musopen Symphony). Source: <a href="https://commons.wikimedia.org/wiki/File:Mozart_-_Symphony_No._40_in_G_minor%2C_K550_-_I._Molto_allegro_%28Musopen_Symphony%29.flac">Wikimedia Commons</a>. Public domain.</p>
         </div>
         <p>&copy; 2026 DH101 Critical Making</p>
     </footer>
+    <script>
+        document.querySelectorAll(".alt-toggle").forEach((button) => {
+            button.addEventListener("click", () => {
+                const targetId = button.getAttribute("aria-controls");
+                const target = targetId ? document.getElementById(targetId) : null;
+                if (!target) {
+                    return;
+                }
+                const isExpanded = button.getAttribute("aria-expanded") === "true";
+                button.setAttribute("aria-expanded", (!isExpanded).toString());
+                if (isExpanded) {
+                    target.setAttribute("hidden", "");
+                } else {
+                    target.removeAttribute("hidden");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 
