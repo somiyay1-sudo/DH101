@@ -111,6 +111,24 @@ img {
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
 }
 
+.notion-code {
+  background: #f7f6f3;
+  color: #2f3437;
+  border: 1px solid #e4e1db;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  overflow-x: auto;
+  font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.notion-code code {
+  font-family: inherit;
+  white-space: inherit;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

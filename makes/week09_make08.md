@@ -6,193 +6,6 @@ layout: default
 
 ## 1. The Generator
 
-### Code of Bot
-
-```python
-import calendar
-import random
-from datetime import datetime
-from pathlib import Path
-
-
-WEATHERS = [
-	"clear skies",
-	"sunny",
-	"partly cloudy",
-	"mostly cloudy",
-	"overcast",
-	"light rain",
-	"heavy rain",
-	"showers",
-	"thunderstorms",
-	"drizzle",
-	"mist",
-	"fog",
-	"hail",
-	"sleet",
-	"snow",
-	"blizzard",
-	"windy",
-	"dust storm",
-	"heatwave",
-	"cold snap",
-	"tropical storm",
-	"rain then clearing",
-	"sun breaks after rain",
-	"sunny with passing showers",
-]
-
-
-SKY_DESC = [
-	"a soft golden dawn",
-	"a pale blue sky",
-	"a slate-gray ceiling",
-	"high, fast clouds",
-	"low, heavy clouds",
-	"broken cloud bands",
-	"a hazy glow",
-	"a sharp, crisp horizon",
-]
-
-
-WIND_DESC = [
-	"calm winds",
-	"a light breeze",
-	"steady winds",
-	"gusty winds",
-	"strong crosswinds",
-	"variable winds",
-]
-
-
-HUMIDITY_DESC = [
-	"dry air",
-	"comfortable humidity",
-	"muggy air",
-	"sticky humidity",
-]
-
-
-PRECIP_DESC = [
-	"no chance of precipitation",
-	"a slight chance of precipitation",
-	"a moderate chance of precipitation",
-	"a high chance of precipitation",
-]
-
-
-VISIBILITY_DESC = [
-	"excellent visibility",
-	"good visibility",
-	"reduced visibility",
-	"poor visibility",
-]
-
-
-EXTRAS = [
-	"UV levels will be moderate",
-	"UV levels will be high",
-	"pollen levels will be elevated",
-	"air quality will be fair",
-	"air quality will be poor",
-	"pressure will be steady",
-	"pressure will be falling",
-	"pressure will be rising",
-	"cloud cover will be patchy",
-	"cloud cover will be dense",
-]
-
-
-def random_temperature(min_c=-30, max_c=40):
-	return random.randint(min_c, max_c)
-
-
-def pick_weather():
-	return random.choice(WEATHERS)
-
-
-def random_date():
-	current_year = datetime.now().year
-	year = random.randint(current_year - 2, current_year + 2)
-	month_number = random.randint(1, 12)
-	month_name = datetime(year, month_number, 1).strftime("%B")
-	last_day = calendar.monthrange(year, month_number)[1]
-	day = random.randint(1, last_day)
-	return year, month_name, str(day)
-
-
-def generate_forecast(month=None, day=None):
-	if month is None or day is None:
-		year, month, day = random_date()
-	else:
-		year = datetime.now().year
-
-	morning_weather = pick_weather()
-	afternoon_weather = pick_weather()
-	night_weather = pick_weather()
-
-	a = random_temperature()
-	b = random_temperature()
-	c = random_temperature()
-
-	lines = [
-		f"The weather on {month} {day}, {year} will be {pick_weather()}.",
-		f"In the morning, it will be {morning_weather}, and the temperature is expected to reach {a}°.",
-		f"In the afternoon, it will be {afternoon_weather}, and the temperature is expected to reach {b}°.",
-		f"At night, it will be {night_weather}, and the temperature is expected to reach {c}°.",
-		f"Expect {random.choice(SKY_DESC)} with {random.choice(WIND_DESC)}.",
-		f"There will be {random.choice(HUMIDITY_DESC)} and {random.choice(PRECIP_DESC)}.",
-		f"Overall, {random.choice(VISIBILITY_DESC)} is likely.",
-		f"Note: {random.choice(EXTRAS)}.",
-	]
-
-	return "\n".join(lines)
-
-
-if __name__ == "__main__":
-	output_path = Path(__file__).resolve().parent / "weather_report.txt"
-	with output_path.open("w", encoding="utf-8") as report_file:
-		for i in range(10):
-			report_file.write(generate_forecast())
-			if i < 9:
-				report_file.write("\n" + ("-" * 40) + "\n")
-```
-
-## 2. Curated Outputs
-
-### Criteria for “Best”
-Here are the five best weather forecasts. In this context, "best" refers to the most unrealistic and absurd forecasts, specifically those featuring exceptionally high or low temperatures or unseasonable weather conditions. The following section explains the generated weather forecast and the reasons for its selection (i.e., why this weather forecast is absurd).
-
-#### 1
-----------------------------------------
-The weather on February 16, 2028 will be fog.
-In the morning, it will be heatwave, and the temperature is expected to reach -17°.
-In the afternoon, it will be fog, and the temperature is expected to reach 39°.
-At night, it will be clear skies, and the temperature is expected to reach 34°.
-Expect a soft golden dawn with strong crosswinds.
-There will be muggy air and a slight chance of precipitation.
-Overall, reduced visibility is likely.
-Note: pollen levels will be elevated.
-----------------------------------------
-This weather forecast is entirely impossible and absurd. It predicts a heat wave with temperatures ranging from -17°C in the morning to 39°C in the afternoon and 34°C at night under clear skies. Such extreme temperature fluctuations—over 50°C in a single day—are physically impossible under normal Earth conditions. Furthermore, the described weather conditions are mutually exclusive: a heat wave cannot coexist with freezing temperatures, fog rarely occurs at such high temperatures, and nighttime temperatures typically decrease rather than remain extremely hot. Additional details, such as strong crosswinds, muggy air, reduced visibility, and a "soft golden dawn," only add to the inconsistency, rendering the forecast scientifically nonsensical.
-
-#### 2
-----------------------------------------
-The weather on July 29, 2025 will be heatwave.
-In the morning, it will be mostly cloudy, and the temperature is expected to reach 1°.
-In the afternoon, it will be sleet, and the temperature is expected to reach -11°.
-At night, it will be snow, and the temperature is expected to reach -30°.
-Expect a hazy glow with a light breeze.
-There will be muggy air and a slight chance of precipitation.
-Overall, poor visibility is likely.
-Note: UV levels will be high.
-----------------------------------------
-This weather forecast is good because it is utterly impossible. It predicts a heatwave, yet the morning temperature is only 1°C, the afternoon reaches -11°C with sleet, and nighttime drops to -30°C with snow. Such extreme cold in the middle of summer, combined with a heatwave label, is physically impossible. The described weather conditions also contradict each other: heatwaves imply very high temperatures, not subzero conditions; sleet and snow cannot occur alongside muggy, high-UV conditions; and poor visibility with a “hazy glow” is inconsistent with -30°C nighttime snow.
-
-#### 3
-----------------------------------------
-The weather on August 10, 2028 will be heavy rain.
-In the morning, it will be snow, and the temperature is expected to reach -14°.
 In the afternoon, it will be windy, and the temperature is expected to reach 19°.
 At night, it will be mostly cloudy, and the temperature is expected to reach -5°.
 Expect a pale blue sky with gusty winds.
@@ -235,6 +48,87 @@ The generator was created using VS Code's AI capabilities. I devised a weather f
 ## 4. Artist Statement (250 words)
 
 The essence of AI creativity lies in its randomness. When humans generate text, their output inevitably reflects their thought processes and personal biases. For example, if someone were to create a nonsensical weather forecast, they could produce one that is utterly implausible. However, if that same person were to generate fifty such forecasts, the results would likely resemble one another, perhaps featuring wildly disparate temperatures or weather conditions that do not align with the given season. While humans can produce creative works, generating them in large quantities often results in similar pieces, causing the collection to lose its uniqueness. Conversely, AI is capable of generating content that is almost entirely random. Furthermore, AI can generate massive volumes of nonsensical weather forecasts simultaneously due to its rapid processing speed. This output will naturally include a mix of plausible forecasts, as well as dull or uninspired ones. Yet, because AI lacks personal quirks, it can generate content without introducing any specific biases or patterns. I consider this randomness to be the source of AI's creativity. In this generative process, human intervention serves as the arbiter, determining whether the text produced by AI is "interesting." Since AI output includes results that humans would deem "dull" or "boring," these must be filtered out manually. This judgment task should be reserved for humans because, while an AI can make random selections, it struggles to comprehend and apply the intrinsic human criteria for "interest" or "excellence." In this context, "best" refers to the most unrealistic and absurd forecasts, specifically those featuring exceptionally high or low temperatures or unseasonable weather conditions. The following section explains the generated weather forecast and the reasons for its selection (i.e., why this weather forecast is absurd).
+
+## Curated Outputs
+
+### Criteria for "Best"
+
+Here are the five best weather forecasts. In this context, "best" refers to the most unrealistic and absurd forecasts, specifically those featuring exceptionally high or low temperatures or unseasonable weather conditions. The following section explains the generated weather forecast and the reasons for its selection (i.e., why this weather forecast is absurd).
+
+<pre class="notion-code"><code>1
+----------------------------------------
+The weather on February 16, 2028 will be fog.
+In the morning, it will be heatwave, and the temperature is expected to reach -17°.
+In the afternoon, it will be fog, and the temperature is expected to reach 39°.
+At night, it will be clear skies, and the temperature is expected to reach 34°.
+Expect a soft golden dawn with strong crosswinds.
+There will be muggy air and a slight chance of precipitation.
+Overall, reduced visibility is likely.
+Note: pollen levels will be elevated.
+----------------------------------------
+</code></pre>
+
+This weather forecast is entirely impossible and absurd. It predicts a heat wave with temperatures ranging from -17°C in the morning to 39°C in the afternoon and 34°C at night under clear skies. Since this represents a climatic condition that humans generally never experience, it is unlikely that a human being would have generated such an absurd weather forecast. Rather, these incongruous temperature readings were produced by an AI randomly assigning numerical values. This is why this weather report is selected.
+
+<pre class="notion-code"><code>2
+----------------------------------------
+The weather on July 29, 2025 will be heatwave.
+In the morning, it will be mostly cloudy, and the temperature is expected to reach 1°.
+In the afternoon, it will be sleet, and the temperature is expected to reach -11°.
+At night, it will be snow, and the temperature is expected to reach -30°.
+Expect a hazy glow with a light breeze.
+There will be muggy air and a slight chance of precipitation.
+Overall, poor visibility is likely.
+Note: UV levels will be high.
+----------------------------------------
+</code></pre>
+
+No one worries about being struck by a heatwave while sleet is falling. It predicts a heatwave, yet the morning temperature is only 1°C, the afternoon reaches -11°C with sleet, and nighttime drops to -30°C with snow. This weather forecast, too, is conjuring up bizarre, nonsensical shifts in the weather that defy human imagination.
+
+<pre class="notion-code"><code>3
+----------------------------------------
+The weather on August 10, 2028 will be heavy rain.
+In the morning, it will be snow, and the temperature is expected to reach -14°.
+In the afternoon, it will be windy, and the temperature is expected to reach 19°.
+At night, it will be mostly cloudy, and the temperature is expected to reach -5°.
+Expect a pale blue sky with gusty winds.
+There will be comfortable humidity and a high chance of precipitation.
+Overall, poor visibility is likely.
+Note: air quality will be fair.
+----------------------------------------
+</code></pre>
+
+When humans create something, they unconsciously consider how it aligns with their experiences and established scientific principles. However, since this weather forecast is generated by a random bot, it disregards these norms. A "pale blue sky" does not align with heavy rain and gusty winds. Comfortable humidity and poor visibility are inconsistent with these extremes. This weather report is not scientific, which is why it was selected.
+
+<pre class="notion-code"><code>4
+----------------------------------------
+The weather on July 19, 2026 will be overcast.
+In the morning, it will be mist, and the temperature is expected to reach 33°.
+In the afternoon, it will be tropical storm, and the temperature is expected to reach 5°.
+At night, it will be light rain, and the temperature is expected to reach -9°.
+Expect a hazy glow with strong crosswinds.
+There will be dry air and no chance of precipitation.
+Overall, poor visibility is likely.
+Note: pressure will be falling.
+----------------------------------------
+</code></pre>
+
+This weather forecast was selected because it exemplifies a level of absurdity beyond human imagination. The weather forecast is also impossible. It predicts overcast skies for the day, yet the morning temperature is 33°C with mist, the afternoon drops to 5°C during a tropical storm, and nighttime falls further to -9°C with light rain.
+
+<pre class="notion-code"><code>5
+----------------------------------------
+The weather on May 6, 2027 will be thunderstorms.
+In the morning, it will be rain then clearing, and the temperature is expected to reach 10°.
+In the afternoon, it will be sunny with passing showers, and the temperature is expected to reach -4°.
+At night, it will be sleet, and the temperature is expected to reach -21°.
+Expect broken cloud bands with gusty winds.
+There will be dry air and a slight chance of precipitation.
+Overall, poor visibility is likely.
+Note: cloud cover will be dense.
+----------------------------------------
+</code></pre>
+
+The weather forecast for May 6, 2027 is entirely impossible and absurd. The conditions also contradict each other: thunderstorms cannot happen at -4°C, "sunny with passing showers" conflicts with dense cloud cover, and sleet combined with dry air and a slight chance of precipitation makes no meteorological sense.
 
 ## Output of the program, total number, 50
 
@@ -697,6 +591,161 @@ Expect a pale blue sky with steady winds.
 There will be comfortable humidity and a slight chance of precipitation.
 Overall, poor visibility is likely.
 Note: cloud cover will be dense.
+
+## Code of Bot
+
+<pre class="notion-code"><code>import calendar
+import random
+from datetime import datetime
+from pathlib import Path
+
+
+WEATHERS = [
+	"clear skies",
+	"sunny",
+	"partly cloudy",
+	"mostly cloudy",
+	"overcast",
+	"light rain",
+	"heavy rain",
+	"showers",
+	"thunderstorms",
+	"drizzle",
+	"mist",
+	"fog",
+	"hail",
+	"sleet",
+	"snow",
+	"blizzard",
+	"windy",
+	"dust storm",
+	"heatwave",
+	"cold snap",
+	"tropical storm",
+	"rain then clearing",
+	"sun breaks after rain",
+	"sunny with passing showers",
+]
+
+
+SKY_DESC = [
+	"a soft golden dawn",
+	"a pale blue sky",
+	"a slate-gray ceiling",
+	"high, fast clouds",
+	"low, heavy clouds",
+	"broken cloud bands",
+	"a hazy glow",
+	"a sharp, crisp horizon",
+]
+
+
+WIND_DESC = [
+	"calm winds",
+	"a light breeze",
+	"steady winds",
+	"gusty winds",
+	"strong crosswinds",
+	"variable winds",
+]
+
+
+HUMIDITY_DESC = [
+	"dry air",
+	"comfortable humidity",
+	"muggy air",
+	"sticky humidity",
+]
+
+
+PRECIP_DESC = [
+	"no chance of precipitation",
+	"a slight chance of precipitation",
+	"a moderate chance of precipitation",
+	"a high chance of precipitation",
+]
+
+
+VISIBILITY_DESC = [
+	"excellent visibility",
+	"good visibility",
+	"reduced visibility",
+	"poor visibility",
+]
+
+
+EXTRAS = [
+	"UV levels will be moderate",
+	"UV levels will be high",
+	"pollen levels will be elevated",
+	"air quality will be fair",
+	"air quality will be poor",
+	"pressure will be steady",
+	"pressure will be falling",
+	"pressure will be rising",
+	"cloud cover will be patchy",
+	"cloud cover will be dense",
+]
+
+
+def random_temperature(min_c=-30, max_c=40):
+	return random.randint(min_c, max_c)
+
+
+def pick_weather():
+	return random.choice(WEATHERS)
+
+
+def random_date():
+	current_year = datetime.now().year
+	year = random.randint(current_year - 2, current_year + 2)
+	month_number = random.randint(1, 12)
+	month_name = datetime(year, month_number, 1).strftime("%B")
+	last_day = calendar.monthrange(year, month_number)[1]
+	day = random.randint(1, last_day)
+	return year, month_name, str(day)
+
+
+def generate_forecast(month=None, day=None):
+	if month is None or day is None:
+		year, month, day = random_date()
+	else:
+		year = datetime.now().year
+
+
+	morning_weather = pick_weather()
+	afternoon_weather = pick_weather()
+	night_weather = pick_weather()
+
+
+	a = random_temperature()
+	b = random_temperature()
+	c = random_temperature()
+
+
+	lines = [
+		f"The weather on {month} {day}, {year} will be {pick_weather()}.",
+		f"In the morning, it will be {morning_weather}, and the temperature is expected to reach {a}°.",
+		f"In the afternoon, it will be {afternoon_weather}, and the temperature is expected to reach {b}°.",
+		f"At night, it will be {night_weather}, and the temperature is expected to reach {c}°.",
+		f"Expect {random.choice(SKY_DESC)} with {random.choice(WIND_DESC)}.",
+		f"There will be {random.choice(HUMIDITY_DESC)} and {random.choice(PRECIP_DESC)}.",
+		f"Overall, {random.choice(VISIBILITY_DESC)} is likely.",
+		f"Note: {random.choice(EXTRAS)}.",
+	]
+
+
+	return "\n".join(lines)
+
+
+if __name__ == "__main__":
+	output_path = Path(__file__).resolve().parent / "weather_report.txt"
+	with output_path.open("w", encoding="utf-8") as report_file:
+		for i in range(10):
+			report_file.write(generate_forecast())
+			if i < 9:
+				report_file.write("\n" + ("-" * 40) + "\n")
+</code></pre>
 
 
 
